@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://gist.github.com/200835ashniharashids9-blip -->
+<html lang="en" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark" data-a11y-animated-images="system" data-a11y-link-underlines="true" class="js-focus-visible" data-js-focus-visible="" data-turbo-loaded=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 2147483647;
+  transition:
+    width 300ms ease-out,
+    opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+</style><style>
+:root {
+  --fontStack-monospace: "Monaspace Neon", ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace !important;
+}
+</style>
+
+
+
+
+  
+    
+  <link rel="dns-prefetch" href="https://github.githubassets.com/">
+  <link rel="dns-prefetch" href="https://avatars.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com/">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+  <link rel="preconnect" href="https://github.githubassets.com/" crossorigin="">
+  <link rel="preconnect" href="https://avatars.githubusercontent.com/">
+
+  
+
+  <link crossorigin="anonymous" media="all" rel="stylesheet" href="./200835ashniharashids9-blip’s gists_files/light-8e973f836952.css"><link crossorigin="anonymous" media="all" rel="stylesheet" href="./200835ashniharashids9-blip’s gists_files/dark-4bce7af39e21.css"><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-34b642d57214.css"><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-54be93e666a7.css"><link data-color-theme="light_colorblind_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind_high_contrast-8ae7edf5489c.css"><link data-color-theme="light_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia-84d50df427c0.css"><link data-color-theme="light_tritanopia_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia_high_contrast-a80873375146.css"><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-ad512d3e2f3b.css"><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-d152d6cd6879.css"><link data-color-theme="dark_colorblind_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind_high_contrast-fa4060c1a9da.css"><link data-color-theme="dark_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_tritanopia-d7bad0fb00bb.css"><link data-color-theme="dark_tritanopia_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_tritanopia_high_contrast-4a0107c0f60c.css"><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-045e6b6ac094.css"><link data-color-theme="dark_dimmed_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed_high_contrast-5de537db5e79.css">
+
+  <style type="text/css">
+    :root {
+      --tab-size-preference: 4;
+    }
+
+    pre, code {
+      tab-size: var(--tab-size-preference);
+    }
+  </style>
+
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="./200835ashniharashids9-blip’s gists_files/primer-primitives-c37d781e2da5.css">
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="./200835ashniharashids9-blip’s gists_files/primer-efa08b71f947.css">
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="./200835ashniharashids9-blip’s gists_files/global-6dcb16809e76.css">
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="./200835ashniharashids9-blip’s gists_files/github-f86c648606b5.css">
+  <link crossorigin="anonymous" media="all" rel="stylesheet" href="./200835ashniharashids9-blip’s gists_files/profile-1832ec223d40.css">
+
+  
+
+  <script type="application/json" id="client-env">{"locale":"en","featureFlags":["a11y_status_checks_ruleset","actions_custom_images_public_preview_visibility","actions_custom_images_storage_billing_ui_visibility","actions_enable_snapshot_keyword","actions_image_version_event","alternate_user_config_repo","api_insights_show_missing_data_banner","arianotify_comprehensive_migration","arianotify_partial_migration","billing_hard_budget_limits_for_licenses","client_version_header","codespaces_prebuild_region_target_update","contentful_lp_footnotes","copilot_agent_cli_public_preview","copilot_agent_task_list_v2","copilot_agent_tasks_btn_code_nav","copilot_agent_tasks_btn_code_view","copilot_agent_tasks_btn_code_view_lines","copilot_agent_tasks_btn_repo","copilot_api_agentic_issue_marshal_yaml","copilot_api_draft_issue_reference_with_project_id","copilot_api_draft_issues_with_dependencies","copilot_api_github_draft_update_issue_skill","copilot_chat_agents_empty_state","copilot_chat_attach_multiple_images","copilot_chat_disable_model_picker_while_streaming","copilot_chat_file_redirect","copilot_chat_input_commands","copilot_chat_opening_thread_switch","copilot_chat_reduce_quota_checks","copilot_chat_search_bar_redirect","copilot_chat_selection_attachments","copilot_chat_vision_in_claude","copilot_chat_vision_preview_gate","copilot_coding_agent_task_response","copilot_custom_copilots","copilot_custom_copilots_feature_preview","copilot_duplicate_thread","copilot_extensions_hide_in_dotcom_chat","copilot_extensions_removal_on_marketplace","copilot_features_raycast_logo","copilot_file_block_ref_matching","copilot_ftp_hyperspace_upgrade_prompt","copilot_ftp_settings_upgrade","copilot_immersive_generate_thread_name_async","copilot_immersive_issues_readonly_viewer","copilot_immersive_issues_show_relationships","copilot_immersive_job_result_preview","copilot_immersive_structured_model_picker","copilot_immersive_task_hyperlinking","copilot_immersive_task_within_chat_thread","copilot_issue_list_show_more","copilot_org_policy_page_focus_mode","copilot_pipes_code_nodes","copilot_pipes_github_graphql_nodes","copilot_premium_request_quotas","copilot_security_alert_assignee_options","copilot_share_active_subthread","copilot_spaces_as_attachments","copilot_spaces_ga","copilot_spark_empty_state","copilot_spark_loading_webgl","copilot_spark_progressive_error_handling","copilot_spark_use_billing_headers","copilot_stable_conversation_view","copilot_swe_agent_progress_commands","copilot_swe_agent_use_subagents","copilot_workbench_agent_seed_tool","copilot_workbench_agent_user_edit_awareness","copilot_workbench_cache","copilot_workbench_preview_analytics","copilot_workbench_use_single_prompt","data_router_force_refetch_on_navigation","direct_to_salesforce","disable_dashboard_universe_2025_private_preview","disable_turbo_visit","dom_node_counts","dotcom_chat_client_side_skills","enterprise_ai_controls","failbot_report_error_react_apps_on_page","fetch_graphql_improved_error_serialization","fgpat_permissions_selector_redesign","ghost_pilot_confidence_truncation_25","ghost_pilot_confidence_truncation_40","global_search_multi_orgs","global_sso_banner","global_sso_banner_dismiss_dialog","hyperspace_2025_logged_out_batch_1","hyperspace_nudges_universe25","hyperspace_nudges_universe25_post_event","initial_per_page_pagination_updates","issue_fields_report_usage","issues_expanded_file_types","issues_lazy_load_comment_box_suggestions","issues_react_bots_timeline_pagination","issues_react_include_bots_in_pickers","issues_react_prohibit_title_fallback","issues_report_sidebar_interactions","issues_sticky_sidebar","item_picker_project_tsq_migration","kb_convert_to_space","kb_semantic_api_migration","kb_sunset","lifecycle_label_name_updates","link_contact_sales_swp_marketo","loops_service_graphql_execution","marketing_pages_search_explore_provider","mcp_registry_install","mcp_registry_oss_v0_1_api","memex_default_issue_create_repository","memex_grouped_by_edit_route","memex_mwl_filter_field_delimiter","memex_roadmap_drag_style","mission_control_use_body_html","new_traffic_page_banner","open_agent_session_in_vscode_insiders","open_agent_session_in_vscode_stable","pr_react_loading_optimizations","pr_sfv_new_diff_fetch","primer_react_segmented_control_tooltip","projects_assignee_max_limit","react_fetch_graphql_ignore_expected_errors","record_sso_banner_metrics","repos_insights_remove_new_url","repository_suggester_elastic_search","ruleset_deletion_confirmation","sample_network_conn_type","scheduled_reminders_updated_limits","site_features_copilot_universe","site_homepage_collaborate_video","site_homepage_contentful","site_homepage_eyebrow_banner","site_homepage_universe_animations","site_msbuild_webgl_hero","spark_agent_max_output_tokens_error","spark_fix_rename","spark_force_push_after_checkout","spark_improve_image_upload","spark_kv_encocoded_keys","spark_show_data_access_on_publish","spark_sync_repository_after_iteration","viewscreen_sandbox","webp_support","workbench_store_readonly"],"login":"200835ashniharashids9-blip","copilotApiOverrideUrl":"https://api.individual.githubcopilot.com"}</script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/wp-runtime-ba18ab5f6f3d.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/913-ca2305638c53.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/6488-de87864e6818.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/environment-122ed792f7a3.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/11683-aa3d1ebe6648.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/43784-4652ae97a661.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/4712-809eac2badf7.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/81028-5b8c5e07a4fa.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/74911-6a311b93ee8e.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/91853-b5d2e5602241.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/78143-31968346cf4c.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/52430-c46e2de36eb2.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/github-elements-5b3e77949adb.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/element-registry-d2206e2f0bc4.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/28546-ee41c9313871.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/17688-a9e16fb5ed13.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/2869-a4ba8f17edb3.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/70191-5122bf27bf3e.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/7332-5ea4ccf72018.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/3561-d56ebea34f95.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/19037-69d630e73af8.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/89708-dcace8d1bd5c.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/51519-dc0d4e14166a.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/7534-e77ef16596b9.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/96384-750ef5263abe.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/19718-676a65610616.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/behaviors-f4043678d2f5.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/48011-5b6f71a93de7.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/notifications-global-eb21f5b0029d.js.download" defer="defer"></script>
+  
+  <script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/5017-909a65dc1b4c.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/55526-5355298da17b.js.download" defer="defer"></script>
+<script crossorigin="anonymous" type="application/javascript" src="./200835ashniharashids9-blip’s gists_files/gist-23472591af40.js.download" defer="defer"></script>
+
+
+  <title>200835ashniharashids9-blip’s gists</title>
+
+
+
+  <meta name="route-pattern" content="/:user_id(.:format)" data-turbo-transient="">
+  <meta name="route-controller" content="gists_users" data-turbo-transient="">
+  <meta name="route-action" content="show" data-turbo-transient="">
+  <meta name="fetch-nonce" content="v2:1146c758-b043-c853-df9e-973d1b13ee0c">
+
+    
+  <meta name="current-catalog-service-hash" content="56253a530ab9027b25719525dcbe6007461a3202218f6f5dfce5a601c121cbcb">
+
+
+  <meta name="request-id" content="D714:18463B:DB6DF5:FE5D4D:692803F1" data-turbo-transient="true"><meta name="html-safe-nonce" content="d35986289677ccfef31d31ec8047d6fcca72bb94e4363b57a605770572fd8bc0" data-turbo-transient="true"><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS8iLCJyZXF1ZXN0X2lkIjoiRDcxNDoxODQ2M0I6REI2REY1OkZFNUQ0RDo2OTI4MDNGMSIsInZpc2l0b3JfaWQiOiI1MjgwMDE3OTIyNTQ3NzE3MTMwIiwicmVnaW9uX2VkZ2UiOiJzb3V0aGVhc3Rhc2lhIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9" data-turbo-transient="true"><meta name="visitor-hmac" content="0635e6aa66e381490c5d9040f1e36a1a895f8b0c428b0a2cccf81eb8943f2bb9" data-turbo-transient="true">
+
+
+
+
+  <meta name="github-keyboard-shortcuts" content="copilot" data-turbo-transient="true">
+  
+
+  <meta name="selected-link" value="all" data-turbo-transient="">
+  <link rel="assets" href="https://github.githubassets.com/">
+
+    <meta name="google-site-verification" content="Apib7-x98H0j5cPqHWwSMm6dNU4GmODRoqxLiDzdx9I">
+
+<meta name="octolytics-url" content="https://collector.github.com/github/collect"><meta name="octolytics-actor-id" content="246315954"><meta name="octolytics-actor-login" content="200835ashniharashids9-blip"><meta name="octolytics-actor-hash" content="e3d86a181b367eae8d05f561606da59b887f3c02a9bf558536088b60f3e49121">
+
+  <meta name="analytics-location" content="/&lt;user-name&gt;" data-turbo-transient="true">
+
+  
+
+
+
+
+    <meta name="user-login" content="200835ashniharashids9-blip">
+
+  <link rel="sudo-modal" href="https://gist.github.com/sessions/sudo_modal">
+
+    <meta name="viewport" content="width=device-width">
+
+    
+
+      <meta name="description" content="GitHub Gist: star and fork 200835ashniharashids9-blip&#39;s gists by creating an account on GitHub.">
+
+      <link rel="search" type="application/opensearchdescription+xml" href="https://gist.github.com/opensearch-gist.xml" title="Gist">
+
+    <link rel="fluid-icon" href="https://gist.github.com/fluidicon.png" title="GitHub">
+    <meta property="fb:app_id" content="1401488693436528">
+    <meta name="apple-itunes-app" content="app-id=1477376905, app-argument=https://gist.github.com/200835ashniharashids9-blip">
+
+      <meta name="twitter:image" content="https://github.com/opengraph.png"><meta name="twitter:site" content="@github"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="200835ashniharashids9-blip’s gists"><meta name="twitter:description" content="GitHub Gist: star and fork 200835ashniharashids9-blip&#39;s gists by creating an account on GitHub.">
+  <meta property="og:image" content="https://github.com/opengraph.png"><meta property="og:image:alt" content="GitHub Gist: star and fork 200835ashniharashids9-blip&#39;s gists by creating an account on GitHub."><meta property="og:site_name" content="Gist"><meta property="og:type" content="profile"><meta property="og:title" content="200835ashniharashids9-blip’s gists"><meta property="og:description" content="GitHub Gist: star and fork 200835ashniharashids9-blip&#39;s gists by creating an account on GitHub.">
+  
+
+
+      <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/246315954/ws?session=eyJ2IjoiVjMiLCJ1IjoyNDYzMTU5NTQsInMiOjE4ODA0ODY2NzAsImMiOjI3NTM1NjQzODgsInQiOjE3NjQyMzAxMjl9--8de36e7878062f0e315c61530dd6856f30e2537aa8b40aa701ca53b207a3f222" data-refresh-url="/_alive" data-session-id="7e898e49d86d569548f751ae244663bb938c5f550e653c155182d453290b57cf">
+      <link rel="shared-web-socket-src" href="https://gist.github.com/assets-cdn/worker/socket-worker-2a038060e454.js">
+
+
+      <meta name="hostname" content="gist.github.com">
+
+
+      <meta name="keyboard-shortcuts-preference" content="all">
+      <meta name="hovercards-preference" content="true">
+      <meta name="announcement-preference-hovercard" content="true">
+
+        <meta name="expected-hostname" content="gist.github.com">
+
+
+  <meta http-equiv="x-pjax-version" content="a80b5a895562789b78cccf5e44f0af78b83db791db42c33f89c7ac7203fb5146" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-csp-version" content="21a43568025709b66240454fc92d4f09335a96863f8ab1c46b4a07f6a5b67102" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-css-version" content="8487fec39c8c06b815832ce80ebd89387f6b3bac9b5498b820bc97b9a51ed30a" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-js-version" content="2927c2867532bf30785808a2658b0ee02f2a60417b4acc3969e5118c914f8343" data-turbo-track="reload">
+
+  <meta name="turbo-cache-control" content="no-preview" data-turbo-transient="">
+
+    <link href="https://gist.github.com/200835ashniharashids9-blip.atom" rel="alternate" title="atom" type="application/atom+xml">  <link crossorigin="anonymous" media="all" rel="stylesheet" href="./200835ashniharashids9-blip’s gists_files/gist-f06c9416fa76.css">
+
+
+
+
+    <meta name="turbo-body-classes" content="logged-in env-production page-responsive">
+  <meta name="disable-turbo" content="false">
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <meta name="release" content="546522cd1c97a7cdfbf6c77c4bbac2cab20b313e">
+  <meta name="ui-target" content="full">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon-dark.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon-dark.svg" data-base-href="https://github.githubassets.com/favicons/favicon">
+
+<meta name="theme-color" content="#1e2327">
+<meta name="color-scheme" content="light dark">
+
+  <meta name="msapplication-TileImage" content="/windows-tile.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+
+
+  <link rel="stylesheet" type="text/css" href="./200835ashniharashids9-blip’s gists_files/14814.29aaeaafa90f007c6f61.module.css" crossorigin="anonymous"><style id="ms-consent-banner-main-styles">.w8hcgFksdo30C8w-bygqu{color:#000}.ydkKdaztSS0AeHWIeIHsQ a{color:#0067B8}.erL690_8JwUW-R4bJRcfl{background-color:#EBEBEB;border:none;color:#000}.erL690_8JwUW-R4bJRcfl:enabled:hover{color:#000;background-color:#DBDBDB;box-shadow:0px 4px 10px rgba(0,0,0,0.25);border:none}.erL690_8JwUW-R4bJRcfl:enabled:focus{background-color:#DBDBDB;box-shadow:0px 4px 10px rgba(0,0,0,0.25);border:2px solid #000}.erL690_8JwUW-R4bJRcfl:disabled{opacity:1;color:rgba(0,0,0,0.2);background-color:rgba(0,0,0,0.2);border:none}._1zNQOqxpBFSokeCLGi_hGr{border:none;background-color:#0067B8;color:#fff}._1zNQOqxpBFSokeCLGi_hGr:enabled:hover{color:#fff;background-color:#0067B8;box-shadow:0px 4px 10px rgba(0,0,0,0.25);border:none}._1zNQOqxpBFSokeCLGi_hGr:enabled:focus{background-color:#0067B8;box-shadow:0px 4px 10px rgba(0,0,0,0.25);border:2px solid #000}._1zNQOqxpBFSokeCLGi_hGr:disabled{opacity:1;color:rgba(0,0,0,0.2);background-color:rgba(0,120,215,0.2);border:none}._23tra1HsiiP6cT-Cka-ycB{position:relative;display:flex;z-index:9999;width:100%;background-color:#F2F2F2;justify-content:space-between;text-align:left}div[dir="rtl"]._23tra1HsiiP6cT-Cka-ycB{text-align:right}._1Upc2NjY8AlDn177YoVj0y{margin:0;padding-left:5%;padding-top:8px;padding-bottom:8px}div[dir="rtl"] ._1Upc2NjY8AlDn177YoVj0y{margin:0;padding:8px 5% 8px 0;float:none}._23tra1HsiiP6cT-Cka-ycB svg{fill:none;max-width:none;max-height:none}._1V_hlU-7jdtPiooHMu89BB{display:table-cell;padding:12px;width:24px;height:24px;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:24px;line-height:0}.f6QKJD7fhSbnJLarTL-W-{display:table-cell;vertical-align:middle;padding:0;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:13px;line-height:16px}.f6QKJD7fhSbnJLarTL-W- a{text-decoration:underline}._2j0fmugLb1FgYz6KPuB91w{display:inline-block;margin-left:5%;margin-right:5%;min-width:40%;min-width:calc((150px + 3 * 4px) * 2 + 150px);min-width:-webkit-fit-content;min-width:-moz-fit-content;min-width:fit-content;align-self:center;position:relative}._1XuCi2WhiqeWRUVp3pnFG3{margin:4px;padding:5px;min-width:150px;min-height:36px;vertical-align:top;cursor:pointer;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:20px;text-align:center}._1XuCi2WhiqeWRUVp3pnFG3:focus{box-sizing:border-box}._1XuCi2WhiqeWRUVp3pnFG3:disabled{cursor:not-allowed}._2bvsb3ubApyZ0UGoQA9O9T{display:block;position:fixed;z-index:10000;top:0;left:0;width:100%;height:100%;background-color:rgba(255,255,255,0.6);overflow:auto;text-align:left}div[dir="rtl"]._2bvsb3ubApyZ0UGoQA9O9T{text-align:right}div[dir="rtl"] ._2bvsb3ubApyZ0UGoQA9O9T{left:auto;right:0}.AFsJE948muYyzCMktdzuk{position:relative;top:8%;margin-bottom:40px;margin-left:auto;margin-right:auto;box-sizing:border-box;width:640px;background-color:#fff;border:1px solid #0067B8}._3kWyBRbW_dgnMiEyx06Fu4{float:right;z-index:1;margin:2px;padding:12px;border:none;cursor:pointer;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:13px;line-height:13px;display:flex;align-items:center;text-align:center;color:#666;background-color:#fff}div[dir="rtl"] ._3kWyBRbW_dgnMiEyx06Fu4{margin:2px;padding:12px;float:left}.uCYvKvHXrhjNgflv1VqdD{position:static;margin-top:36px;margin-left:36px;margin-right:36px}._17pX1m9O_W--iZbDt3Ta5r{margin-top:0;margin-bottom:12px;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:600;font-size:20px;line-height:24px;text-transform:none}._1kBkHQ1V1wu3kl-YcLgUr6{height:446px;overflow:auto}._20_nXDf6uFs9Q6wxRXG-I-{margin-top:0;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:20px}._20_nXDf6uFs9Q6wxRXG-I- a{text-decoration:underline}dl._2a0NH_GDQEQe5Ynfo7suVH{margin-top:36px;margin-bottom:0;padding:0;list-style:none;text-transform:none}dt._3j_LCPv7fyXv3A8FIXVwZ4{margin-top:20px;float:none;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:600;font-size:18px;line-height:24px;list-style:none}.k-vxTGFbdq1aOZB2HHpjh{margin:0;padding:0;border:none}._2Bucyy75c_ogoU1g-liB5R{margin:0;padding:0;border-bottom:none;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:600;font-size:18px;line-height:24px;text-transform:none}._63gwfzV8dclrsl2cfd90r{display:inline-block;margin-top:0;margin-bottom:13px;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:20px}._1l8wM_4mRYGz3Iu7l3BZR7{display:block}._2UE03QS02aZGkslegN_F-i{display:inline-block;position:relative;left:5px;margin-bottom:13px;margin-right:34px;padding:3px}div[dir="rtl"] ._2UE03QS02aZGkslegN_F-i{margin:0 0 13px 34px;padding:3px;float:none}div[dir="rtl"] ._2UE03QS02aZGkslegN_F-i{left:auto;right:5px}._23tra1HsiiP6cT-Cka-ycB *::before,._2bvsb3ubApyZ0UGoQA9O9T *::before,._23tra1HsiiP6cT-Cka-ycB *::after,._2bvsb3ubApyZ0UGoQA9O9T *::after{box-sizing:inherit}._1HSFn0HzGo6w4ADApV8-c4{outline:2px solid rgba(0,0,0,0.8)}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2{display:inline-block;position:relative;margin-top:0;margin-left:0;margin-right:0;height:0;width:0;border-radius:0;cursor:pointer;outline:none;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2+label::before{display:block;position:absolute;top:5px;left:3px;height:19px;width:19px;content:"";border-radius:50%;border:1px solid #000;background-color:#fff}div[dir="rtl"] input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2+label::before{left:auto;right:3px}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:not(:disabled)+label:hover::before{border:1px solid #0067B8}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:not(:disabled)+label:hover::after{display:block;position:absolute;top:10px;left:8px;height:9px;width:9px;content:"";border-radius:50%;background-color:rgba(0,0,0,0.8)}div[dir="rtl"] input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:not(:disabled)+label:hover::after{left:auto;right:8px}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:not(:disabled)+label:focus::before{border:1px solid #0067B8}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:not(:disabled)+label:focus::after{display:block;position:absolute;top:10px;left:8px;height:9px;width:9px;content:"";border-radius:50%;background-color:#000}div[dir="rtl"] input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:not(:disabled)+label:focus::after{left:auto;right:8px}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:checked+label::after{display:block;position:absolute;top:10px;left:8px;height:9px;width:9px;content:"";border-radius:50%;background-color:#000}div[dir="rtl"] input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:checked+label::after{left:auto;right:8px}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:disabled+label{cursor:not-allowed}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:disabled+label::before{border:1px solid rgba(0,0,0,0.2);background-color:rgba(0,0,0,0.2)}._3RJzeL3l9Rl_lAQEm6VwdX{display:block;position:static;float:right;margin-top:0;margin-bottom:0;margin-left:19px;margin-right:0;padding-top:0;padding-bottom:0;padding-left:8px;padding-right:0;width:80%;width:calc(100% - 19px);font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:20px;text-transform:none;cursor:pointer;box-sizing:border-box}div[dir="rtl"] ._3RJzeL3l9Rl_lAQEm6VwdX{margin:0 19px 0 0;padding:0 8px 0 0;float:left}.nohp3sIG12ZBhzcMnPala{margin-top:20px;margin-bottom:48px}._2uhaEsmeotZ3P-M0AXo2kF{padding:0;width:278px;height:36px;cursor:pointer;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:20px;text-align:center}._2uhaEsmeotZ3P-M0AXo2kF:focus{box-sizing:border-box}._2uhaEsmeotZ3P-M0AXo2kF:disabled{cursor:not-allowed}._3tOu1FJ59c_xz_PmI1lKV5{float:right;padding:0;width:278px;height:36px;cursor:pointer;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:20px;text-align:center}._3tOu1FJ59c_xz_PmI1lKV5:focus{box-sizing:border-box}._3tOu1FJ59c_xz_PmI1lKV5:disabled{cursor:not-allowed}div[dir="rtl"] ._3tOu1FJ59c_xz_PmI1lKV5{margin:0;padding:0;float:left}@media only screen and (max-width: 768px){._2j0fmugLb1FgYz6KPuB91w,._1Upc2NjY8AlDn177YoVj0y{padding-top:8px;padding-bottom:12px;padding-left:3.75%;padding-right:3.75%;margin:0;width:92.5%}._23tra1HsiiP6cT-Cka-ycB{display:block}._1XuCi2WhiqeWRUVp3pnFG3{margin-bottom:8px;margin-left:0;margin-right:0;width:100%}._2bvsb3ubApyZ0UGoQA9O9T{overflow:hidden}.AFsJE948muYyzCMktdzuk{top:1.8%;width:93.33%;height:96.4%;overflow:hidden}.uCYvKvHXrhjNgflv1VqdD{margin-top:24px;margin-left:24px;margin-right:24px;height:100%}._1kBkHQ1V1wu3kl-YcLgUr6{height:62%;height:calc(100% - 188px);min-height:50%}._2uhaEsmeotZ3P-M0AXo2kF{width:100%}._3tOu1FJ59c_xz_PmI1lKV5{margin-bottom:12px;margin-left:0;width:100%}div[dir="rtl"] ._3tOu1FJ59c_xz_PmI1lKV5{margin:0 0 12px 0;padding:0;float:none}}@media only screen and (max-width: 768px) and (orientation: landscape), only screen and (max-height: 260px), only screen and (max-width: 340px){.AFsJE948muYyzCMktdzuk{overflow:auto}}@media only screen and (max-height: 260px), only screen and (max-width: 340px){._1XuCi2WhiqeWRUVp3pnFG3{min-width:0}._3kWyBRbW_dgnMiEyx06Fu4{padding:3%}.uCYvKvHXrhjNgflv1VqdD{margin-top:3%;margin-left:3%;margin-right:3%}._17pX1m9O_W--iZbDt3Ta5r{margin-bottom:3%}._1kBkHQ1V1wu3kl-YcLgUr6{height:calc(79% - 64px)}.nohp3sIG12ZBhzcMnPala{margin-top:5%;margin-bottom:10%}._3tOu1FJ59c_xz_PmI1lKV5{margin-bottom:3%}div[dir="rtl"] ._3tOu1FJ59c_xz_PmI1lKV5{margin:0 0 3% 0;padding:0;float:none}}
+</style><style type="text/css" id="ms-consent-banner-theme-styles">._23tra1HsiiP6cT-Cka-ycB {
+            background-color: #24292f !important;
+        }.w8hcgFksdo30C8w-bygqu {
+            color: #ffffff !important;
+        }.ydkKdaztSS0AeHWIeIHsQ a {
+            color: #d8b9ff !important;
+        }._2bvsb3ubApyZ0UGoQA9O9T {
+            background-color: rgba(23, 23, 23, 0.8) !important;
+        }.AFsJE948muYyzCMktdzuk {
+            background-color: #24292f !important;
+            border: 1px solid #d8b9ff !important;
+        }._3kWyBRbW_dgnMiEyx06Fu4 {
+            color: #d8b9ff !important;
+            background-color: #24292f !important;
+        }._1zNQOqxpBFSokeCLGi_hGr {
+            border: 1px solid #ffffff !important;
+            background-color: #ffffff !important;
+            color: #1f2328 !important;
+        }._1zNQOqxpBFSokeCLGi_hGr:enabled:hover {
+            color: #1f2328 !important;
+            background-color: #d8b9ff !important;
+            box-shadow: none !important;
+            border: 1px solid transparent !important;
+        }._1zNQOqxpBFSokeCLGi_hGr:enabled:focus {
+            background-color: #d8b9ff !important;
+            box-shadow: none !important;
+            border: 2px solid #ffffff !important;
+        }._1zNQOqxpBFSokeCLGi_hGr:disabled {
+            opacity: 0.5 !important;
+            color: #1f2328 !important;
+            background-color: #ffffff !important;
+            border: 1px solid transparent !important;
+        }.erL690_8JwUW-R4bJRcfl {
+            border: 1px solid #eaeef2 !important;
+            background-color: #32383f !important;
+            color: #ffffff !important;
+        }.erL690_8JwUW-R4bJRcfl:enabled:hover {
+            color: #ffffff !important;
+            background-color: #24292f !important;
+            box-shadow: none !important;
+            border: 1px solid #ffffff !important;
+        }.erL690_8JwUW-R4bJRcfl:enabled:focus {
+            background-color: #24292f !important;
+            box-shadow: none !important;
+            border: 2px solid #6e7781 !important;
+        }.erL690_8JwUW-R4bJRcfl:disabled {
+            opacity: 0.5 !important;
+            color: #ffffff !important;
+            background-color: #424a53 !important;
+            border: 1px solid #6e7781 !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2 + label::before {
+            border: 1px solid #d8b9ff !important;
+            background-color: #24292f !important;
+        }._1HSFn0HzGo6w4ADApV8-c4 {
+            outline: 2px solid #ffffff !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:checked + label::after {
+            background-color: #d8b9ff !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2 + label:hover::before {
+            border: 1px solid #ffffff !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2 + label:hover::after {
+            background-color: #ffffff !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2 + label:focus::before {
+            border: 1px solid #ffffff !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2 + label:focus::after {
+            background-color: #d8b9ff !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:disabled + label::before {
+            border: 1px solid rgba(227, 227, 227, 0.2) !important;
+            background-color: rgba(227, 227, 227, 0.2) !important;
+        }</style></head>
+
+  <body class="logged-in env-production page-responsive" style="overflow-wrap: break-word; --dialog-scrollgutter: 15px;">
+    <div data-turbo-body="" class="logged-in env-production page-responsive" style="word-wrap: break-word;">
+        <div id="__primerPortalRoot__" role="region" style="z-index: 1000; position: absolute; width: 100%;" data-turbo-permanent=""></div>
+      
+
+
+
+    <div class="position-relative header-wrapper js-header-wrapper ">
+      <a href="https://gist.github.com/200835ashniharashids9-blip#start-of-content" data-skip-target-assigned="false" class="p-3 color-bg-accent-emphasis color-fg-on-emphasis show-on-focus js-skip-to-content">Skip to content</a>
+
+      <span data-view-component="true" class="progress-pjax-loader Progress position-fixed width-full">
+    <span style="width: 0%;" data-view-component="true" class="Progress-item progress-pjax-loader-bar left-0 top-0 color-bg-accent-emphasis"></span>
+</span>      
+      
+      <link crossorigin="anonymous" media="all" rel="stylesheet" href="./200835ashniharashids9-blip’s gists_files/primer-react.c918010dadb8d146d90b.module.css">
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="./200835ashniharashids9-blip’s gists_files/keyboard-shortcuts-dialog.29aaeaafa90f007c6f61.module.css">
+
+<react-partial partial-name="keyboard-shortcuts-dialog" data-ssr="false" data-attempted-ssr="false" data-react-profiling="false" data-catalyst="" class="loaded">
+  
+  <script type="application/json" data-target="react-partial.embeddedData">{"props":{"docsUrl":"https://docs.github.com/get-started/accessibility/keyboard-shortcuts"}}</script>
+  <div data-target="react-partial.reactRoot"><div class="d-none"></div><script type="application/json" id="__PRIMER_DATA_:r0:__">{"resolvedServerColorMode":"night"}</script></div>
+</react-partial>
+
+
+
+
+
+      
+
+            <div class="Header js-details-container Details flex-wrap flex-md-nowrap p-responsive" role="banner">
+  <div class="Header-item d-none d-md-flex">
+    <a class="Header-link" data-hotkey="g d" aria-label="Gist Homepage " style="--focus-outlineColor: #fff;" href="https://gist.github.com/">
+  <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github v-align-middle d-inline-block d-md-none">
+    <path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path>
+</svg>
+  <svg aria-hidden="true" height="24" viewBox="0 0 68 24" version="1.1" width="68" data-view-component="true" class="octicon octicon-logo-github v-align-middle d-none d-md-inline-block">
+    <path d="M27.8 17.908h-.03c.013 0 .022.014.035.017l.01-.002-.016-.015Zm.005.017c-.14.001-.49.073-.861.073-1.17 0-1.575-.536-1.575-1.234v-4.652h2.385c.135 0 .24-.12.24-.283V9.302c0-.133-.12-.252-.24-.252H25.37V5.913c0-.119-.075-.193-.21-.193h-3.24c-.136 0-.21.074-.21.193V9.14s-1.636.401-1.741.416a.255.255 0 0 0-.195.253v2.021c0 .164.12.282.255.282h1.665v4.876c0 3.627 2.55 3.998 4.29 3.998.796 0 1.756-.252 1.906-.327.09-.03.135-.134.135-.238v-2.23a.264.264 0 0 0-.219-.265Zm35.549-3.272c0-2.69-1.095-3.047-2.25-2.928-.9.06-1.62.505-1.62.505v5.232s.735.506 1.83.536c1.545.044 2.04-.506 2.04-3.345ZM67 14.415c0 5.099-1.665 6.555-4.576 6.555-2.46 0-3.78-1.233-3.78-1.233s-.06.683-.135.773c-.045.089-.12.118-.21.118h-2.22c-.15 0-.286-.119-.286-.252l.03-16.514a.26.26 0 0 1 .255-.252h3.196a.26.26 0 0 1 .255.252v5.604s1.23-.788 3.03-.788l-.015-.03c1.8 0 4.456.67 4.456 5.767ZM53.918 9.05h-3.15c-.165 0-.255.119-.255.282v8.086s-.826.58-1.95.58c-1.126 0-1.456-.506-1.456-1.62v-7.06a.262.262 0 0 0-.255-.254h-3.21a.262.262 0 0 0-.256.253v7.596c0 3.27 1.846 4.087 4.381 4.087 2.085 0 3.78-1.145 3.78-1.145s.076.58.12.67c.03.074.136.133.24.133h2.011a.243.243 0 0 0 .255-.253l.03-11.103c0-.133-.12-.252-.285-.252Zm-35.556-.015h-3.195c-.135 0-.255.134-.255.297v10.91c0 .297.195.401.45.401h2.88c.3 0 .375-.134.375-.401V9.287a.262.262 0 0 0-.255-.252ZM16.787 4.01c-1.155 0-2.07.907-2.07 2.051 0 1.145.915 2.051 2.07 2.051a2.04 2.04 0 0 0 2.04-2.05 2.04 2.04 0 0 0-2.04-2.052Zm24.74-.372H38.36a.262.262 0 0 0-.255.253v6.08H33.14v-6.08a.262.262 0 0 0-.255-.253h-3.196a.262.262 0 0 0-.255.253v16.514c0 .133.135.252.255.252h3.196a.262.262 0 0 0 .255-.253v-7.06h4.966l-.03 7.06c0 .134.12.253.255.253h3.195a.262.262 0 0 0 .255-.253V3.892a.262.262 0 0 0-.255-.253Zm-28.31 7.313v8.532c0 .06-.015.163-.09.193 0 0-1.875 1.323-4.966 1.323C4.426 21 0 19.84 0 12.2S3.87 2.986 7.651 3c3.27 0 4.59.728 4.8.862.06.075.09.134.09.208l-.63 2.646c0 .134-.134.297-.3.253-.54-.164-1.35-.49-3.255-.49-2.205 0-4.575.623-4.575 5.543s2.25 5.5 3.87 5.5c1.38 0 1.875-.164 1.875-.164V13.94H7.321c-.165 0-.285-.12-.285-.253v-2.735c0-.134.12-.252.285-.252h5.61c.166 0 .286.118.286.252Z"></path>
+</svg>
+  <svg aria-hidden="true" height="24" viewBox="0 0 38 24" version="1.1" width="38" data-view-component="true" class="octicon octicon-logo-gist v-align-middle d-none d-md-inline-block">
+    <path d="M7.05 13.095v-1.5h5.28v8.535c-1.17.555-2.925.96-5.385.96C1.665 21.09 0 17.055 0 12.045S1.695 3 6.945 3c2.43 0 3.96.495 4.92.99v1.575c-1.83-.75-3-1.095-4.92-1.095-3.855 0-5.22 3.315-5.22 7.59s1.365 7.575 5.205 7.575c1.335 0 2.97-.105 3.795-.51v-6.03H7.05Zm16.47 1.035h.045c3.33.3 4.125 1.425 4.125 3.345 0 1.815-1.14 3.615-4.71 3.615-1.125 0-2.745-.285-3.495-.585v-1.41c.705.255 1.83.54 3.495.54 2.43 0 3.09-1.035 3.09-2.13 0-1.065-.33-1.815-2.655-2.01-3.39-.3-4.095-1.5-4.095-3.12 0-1.665 1.08-3.465 4.38-3.465 1.095 0 2.34.135 3.375.585v1.41c-.915-.3-1.83-.54-3.405-.54-2.325 0-2.82.855-2.82 2.01 0 1.035.42 1.56 2.67 1.755Zm12.87-4.995v1.275h-3.63v7.305c0 1.425.795 2.01 2.25 2.01.3 0 .63 0 .915-.045v1.335c-.255.045-.75.075-1.035.075-1.965 0-3.75-.9-3.75-3.195v-7.5H28.8v-.72l2.34-.66V5.85l1.62-.465v3.75h3.63ZM16.635 9.09v9.615c0 .81.285 1.05 1.005 1.05v1.335c-1.71 0-2.58-.705-2.58-2.58V9.09h1.575Zm.375-3.495c0 .66-.51 1.17-1.17 1.17a1.14 1.14 0 0 1-1.155-1.17c0-.66.48-1.17 1.155-1.17s1.17.51 1.17 1.17Z"></path>
+</svg>
+</a>
+
+
+  </div>
+
+  <div class="Header-item d-md-none">
+      <button aria-label="Toggle navigation" aria-expanded="false" type="button" data-view-component="true" class="Header-link js-details-target btn-link">    <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-three-bars">
+    <path d="M3.75 5.25a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Zm0 6a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Zm0 6a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Z"></path>
+</svg>
+</button>  </div>
+
+  <div class="Header-item Header-item--full js-site-search flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div class="header-search flex-self-stretch flex-md-self-auto mr-0 mr-md-3 mb-3 mb-md-0">
+  <!-- '"` --><!-- </textarea></xmp> --><form data-turbo="false" action="https://gist.github.com/search" accept-charset="UTF-8" method="get">
+    <div class="d-flex">
+        <primer-text-field class="FormControl width-full FormControl--fullWidth" data-catalyst="">
+      <label class="sr-only FormControl-label" for="q">
+        Search Gists
+</label>    
+  <div class="FormControl-input-wrap">
+    
+      <input placeholder="Search..." aria-describedby="validation-2b7863d2-ae16-40bd-bbf5-8477d316a010" data-target="primer-text-field.inputElement " class="form-control FormControl-input FormControl-medium rounded-right-0" type="text" name="q" id="q">
+</div>
+      <div class="FormControl-inlineValidation" id="validation-2b7863d2-ae16-40bd-bbf5-8477d316a010" hidden="hidden">
+  <span class="FormControl-inlineValidation--visual" data-target="primer-text-field.validationSuccessIcon" hidden=""><svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-check-circle-fill">
+    <path d="M6 0a6 6 0 1 1 0 12A6 6 0 0 1 6 0Zm-.705 8.737L9.63 4.403 8.392 3.166 5.295 6.263l-1.7-1.702L2.356 5.8l2.938 2.938Z"></path>
+</svg></span>
+  <span class=" FormControl-inlineValidation--visual" data-target="primer-text-field.validationErrorIcon"><svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-alert-fill">
+    <path d="M4.855.708c.5-.896 1.79-.896 2.29 0l4.675 8.351a1.312 1.312 0 0 1-1.146 1.954H1.33A1.313 1.313 0 0 1 .183 9.058ZM7 7V3H5v4Zm-1 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
+</svg></span>
+  <span></span>
+</div>
+    
+</primer-text-field>
+      <button id="icon-button-443e15ed-c7c2-41aa-8da6-806c6f9aa7c0" aria-labelledby="tooltip-f5f66223-fafa-4e21-9617-1f7d878dceec" type="submit" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--medium rounded-left-0">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search Button-visual">
+    <path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path>
+</svg>
+</button><tool-tip id="tooltip-f5f66223-fafa-4e21-9617-1f7d878dceec" for="icon-button-443e15ed-c7c2-41aa-8da6-806c6f9aa7c0" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute" aria-hidden="true" role="tooltip"><template shadowrootmode="open"><style>
+      :host {
+        --tooltip-top: var(--tool-tip-position-top, 0);
+        --tooltip-left: var(--tool-tip-position-left, 0);
+        padding: var(--overlay-paddingBlock-condensed) var(--overlay-padding-condensed) !important;
+        font: var(--text-body-shorthand-small);
+        color: var(--tooltip-fgColor, var(--fgColor-onEmphasis)) !important;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: none;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: break-word;
+        white-space: pre;
+        background: var(--tooltip-bgColor, var(--bgColor-emphasis)) !important;
+        border-radius: var(--borderRadius-medium);
+        border: 0 !important;
+        opacity: 0;
+        max-width: var(--overlay-width-small);
+        word-wrap: break-word;
+        white-space: normal;
+        width: max-content !important;
+        inset: var(--tooltip-top) auto auto var(--tooltip-left) !important;
+        overflow: visible !important;
+        text-wrap: balance;
+      }
+
+      :host(:is(.tooltip-n, .tooltip-nw, .tooltip-ne)) {
+        --tooltip-top: calc(var(--tool-tip-position-top, 0) - var(--overlay-offset, 0.25rem));
+        --tooltip-left: var(--tool-tip-position-left);
+      }
+
+      :host(:is(.tooltip-s, .tooltip-sw, .tooltip-se)) {
+        --tooltip-top: calc(var(--tool-tip-position-top, 0) + var(--overlay-offset, 0.25rem));
+        --tooltip-left: var(--tool-tip-position-left);
+      }
+
+      :host(.tooltip-w) {
+        --tooltip-top: var(--tool-tip-position-top);
+        --tooltip-left: calc(var(--tool-tip-position-left, 0) - var(--overlay-offset, 0.25rem));
+      }
+
+      :host(.tooltip-e) {
+        --tooltip-top: var(--tool-tip-position-top);
+        --tooltip-left: calc(var(--tool-tip-position-left, 0) + var(--overlay-offset, 0.25rem));
+      }
+
+      :host:after{
+        position: absolute;
+        display: block;
+        right: 0;
+        left: 0;
+        height: var(--overlay-offset, 0.25rem);
+        content: "";
+      }
+
+      :host(.tooltip-s):after,
+      :host(.tooltip-se):after,
+      :host(.tooltip-sw):after {
+        bottom: 100%
+      }
+
+      :host(.tooltip-n):after,
+      :host(.tooltip-ne):after,
+      :host(.tooltip-nw):after {
+        top: 100%;
+      }
+
+      @keyframes tooltip-appear {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      :host(:popover-open),
+      :host(:popover-open):before {
+        animation-name: tooltip-appear;
+        animation-duration: .1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+      }
+
+      :host(.\:popover-open) {
+        animation-name: tooltip-appear;
+        animation-duration: .1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+      }
+
+      @media (forced-colors: active) {
+        :host {
+          outline: solid 1px transparent;
+        }
+
+        :host:before {
+          display: none;
+        }
+      }
+    </style><slot></slot></template>Search Gists</tool-tip>
+
+    </div></form>
+</div>
+
+
+    <nav aria-label="Global" class="d-flex flex-column flex-md-row flex-self-stretch flex-md-self-auto">
+  <a class="Header-link mr-0 mr-md-3 py-2 py-md-0 border-top border-md-top-0 border-white-fade" data-ga-click="Header, go to all gists, text:all gists" href="https://gist.github.com/discover">All gists</a>
+
+  <a class="Header-link mr-0 mr-md-3 py-2 py-md-0 border-top border-md-top-0 border-white-fade" data-ga-click="Header, go to GitHub, text:Back to GitHub" href="https://github.com/">Back to GitHub</a>
+
+    <a class="Header-link d-block d-md-none mr-0 mr-md-3 py-2 py-md-0 border-top border-md-top-0 border-white-fade" aria-label="View profile and more" aria-expanded="false" aria-haspopup="false" href="https://gist.github.com/200835ashniharashids9-blip">
+      <img class="avatar avatar-user" src="./200835ashniharashids9-blip’s gists_files/246315954" width="20" height="20" alt="@200835ashniharashids9-blip">
+      200835ashniharashids9-blip
+</a>
+    <!-- '"` --><!-- </textarea></xmp> --><form data-turbo="false" action="https://gist.github.com/auth/github/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="-oYvW1ht6qQxj2MzTbUfT3j-JqnNtoylKomtznBF0UzzbUZTixb7_LeD-uQ_LnW_QluIg0Zn6WoOC1ZI1hR0ug">
+      <button type="submit" class="Header-link mr-0 mr-md-3 py-2 py-md-0 border-top border-md-top-0 border-white-fade d-md-none btn-link d-block width-full text-left" style="padding-left: 2px;" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;sign out&quot;,&quot;label&quot;:&quot;icon:logout&quot;}">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sign-out v-align-middle">
+    <path d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 0 1 0 1.5h-2.5a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 0 1 0 1.5h-2.5A1.75 1.75 0 0 1 2 13.25Zm10.44 4.5-1.97-1.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.97-1.97H6.75a.75.75 0 0 1 0-1.5Z"></path>
+</svg>
+        Sign out
+      </button>
+</form></nav>
+
+  </div>
+
+  <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+    <a class="Header-link" data-hotkey="g d" aria-label="Gist Homepage " style="--focus-outlineColor: #fff;" href="https://gist.github.com/">
+  <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github v-align-middle d-inline-block d-md-none">
+    <path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path>
+</svg>
+  <svg aria-hidden="true" height="24" viewBox="0 0 68 24" version="1.1" width="68" data-view-component="true" class="octicon octicon-logo-github v-align-middle d-none d-md-inline-block">
+    <path d="M27.8 17.908h-.03c.013 0 .022.014.035.017l.01-.002-.016-.015Zm.005.017c-.14.001-.49.073-.861.073-1.17 0-1.575-.536-1.575-1.234v-4.652h2.385c.135 0 .24-.12.24-.283V9.302c0-.133-.12-.252-.24-.252H25.37V5.913c0-.119-.075-.193-.21-.193h-3.24c-.136 0-.21.074-.21.193V9.14s-1.636.401-1.741.416a.255.255 0 0 0-.195.253v2.021c0 .164.12.282.255.282h1.665v4.876c0 3.627 2.55 3.998 4.29 3.998.796 0 1.756-.252 1.906-.327.09-.03.135-.134.135-.238v-2.23a.264.264 0 0 0-.219-.265Zm35.549-3.272c0-2.69-1.095-3.047-2.25-2.928-.9.06-1.62.505-1.62.505v5.232s.735.506 1.83.536c1.545.044 2.04-.506 2.04-3.345ZM67 14.415c0 5.099-1.665 6.555-4.576 6.555-2.46 0-3.78-1.233-3.78-1.233s-.06.683-.135.773c-.045.089-.12.118-.21.118h-2.22c-.15 0-.286-.119-.286-.252l.03-16.514a.26.26 0 0 1 .255-.252h3.196a.26.26 0 0 1 .255.252v5.604s1.23-.788 3.03-.788l-.015-.03c1.8 0 4.456.67 4.456 5.767ZM53.918 9.05h-3.15c-.165 0-.255.119-.255.282v8.086s-.826.58-1.95.58c-1.126 0-1.456-.506-1.456-1.62v-7.06a.262.262 0 0 0-.255-.254h-3.21a.262.262 0 0 0-.256.253v7.596c0 3.27 1.846 4.087 4.381 4.087 2.085 0 3.78-1.145 3.78-1.145s.076.58.12.67c.03.074.136.133.24.133h2.011a.243.243 0 0 0 .255-.253l.03-11.103c0-.133-.12-.252-.285-.252Zm-35.556-.015h-3.195c-.135 0-.255.134-.255.297v10.91c0 .297.195.401.45.401h2.88c.3 0 .375-.134.375-.401V9.287a.262.262 0 0 0-.255-.252ZM16.787 4.01c-1.155 0-2.07.907-2.07 2.051 0 1.145.915 2.051 2.07 2.051a2.04 2.04 0 0 0 2.04-2.05 2.04 2.04 0 0 0-2.04-2.052Zm24.74-.372H38.36a.262.262 0 0 0-.255.253v6.08H33.14v-6.08a.262.262 0 0 0-.255-.253h-3.196a.262.262 0 0 0-.255.253v16.514c0 .133.135.252.255.252h3.196a.262.262 0 0 0 .255-.253v-7.06h4.966l-.03 7.06c0 .134.12.253.255.253h3.195a.262.262 0 0 0 .255-.253V3.892a.262.262 0 0 0-.255-.253Zm-28.31 7.313v8.532c0 .06-.015.163-.09.193 0 0-1.875 1.323-4.966 1.323C4.426 21 0 19.84 0 12.2S3.87 2.986 7.651 3c3.27 0 4.59.728 4.8.862.06.075.09.134.09.208l-.63 2.646c0 .134-.134.297-.3.253-.54-.164-1.35-.49-3.255-.49-2.205 0-4.575.623-4.575 5.543s2.25 5.5 3.87 5.5c1.38 0 1.875-.164 1.875-.164V13.94H7.321c-.165 0-.285-.12-.285-.253v-2.735c0-.134.12-.252.285-.252h5.61c.166 0 .286.118.286.252Z"></path>
+</svg>
+  <svg aria-hidden="true" height="24" viewBox="0 0 38 24" version="1.1" width="38" data-view-component="true" class="octicon octicon-logo-gist v-align-middle d-none d-md-inline-block">
+    <path d="M7.05 13.095v-1.5h5.28v8.535c-1.17.555-2.925.96-5.385.96C1.665 21.09 0 17.055 0 12.045S1.695 3 6.945 3c2.43 0 3.96.495 4.92.99v1.575c-1.83-.75-3-1.095-4.92-1.095-3.855 0-5.22 3.315-5.22 7.59s1.365 7.575 5.205 7.575c1.335 0 2.97-.105 3.795-.51v-6.03H7.05Zm16.47 1.035h.045c3.33.3 4.125 1.425 4.125 3.345 0 1.815-1.14 3.615-4.71 3.615-1.125 0-2.745-.285-3.495-.585v-1.41c.705.255 1.83.54 3.495.54 2.43 0 3.09-1.035 3.09-2.13 0-1.065-.33-1.815-2.655-2.01-3.39-.3-4.095-1.5-4.095-3.12 0-1.665 1.08-3.465 4.38-3.465 1.095 0 2.34.135 3.375.585v1.41c-.915-.3-1.83-.54-3.405-.54-2.325 0-2.82.855-2.82 2.01 0 1.035.42 1.56 2.67 1.755Zm12.87-4.995v1.275h-3.63v7.305c0 1.425.795 2.01 2.25 2.01.3 0 .63 0 .915-.045v1.335c-.255.045-.75.075-1.035.075-1.965 0-3.75-.9-3.75-3.195v-7.5H28.8v-.72l2.34-.66V5.85l1.62-.465v3.75h3.63ZM16.635 9.09v9.615c0 .81.285 1.05 1.005 1.05v1.335c-1.71 0-2.58-.705-2.58-2.58V9.09h1.575Zm.375-3.495c0 .66-.51 1.17-1.17 1.17a1.14 1.14 0 0 1-1.155-1.17c0-.66.48-1.17 1.155-1.17s1.17.51 1.17 1.17Z"></path>
+</svg>
+</a>
+
+
+  </div>
+
+    <div class="Header-item">
+      <notification-indicator data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MjQ2MzE1OTU0IiwidCI6MTc2NDIzMDEyOX0=--305b8bbe45c9f8719d0214a58cf4f10b70ae3283745d746785d4892c210b06cb" data-indicator-mode="none" data-tooltip-global="You have unread notifications" data-tooltip-unavailable="Notifications are unavailable at the moment." data-tooltip-none="You have no unread notifications" data-fetch-indicator-src="/notifications/indicator" data-fetch-indicator-enabled="true" data-view-component="true" class="js-socket-channel" data-fetch-retry-delay-time="500" data-catalyst="">
+    <a id="AppHeader-notifications-button" href="https://gist.github.com/notifications" class="Header-link notification-indicator position-relative" data-hotkey="g n" data-target="notification-indicator.link" aria-labelledby="notification-indicator-tooltip" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to notifications&quot;,&quot;label&quot;:&quot;icon:read&quot;}">
+      <span data-target="notification-indicator.badge" class="mail-status unread" "hidden"="" hidden="">
+      </span>
+
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-bell">
+    <path d="M8 16a2 2 0 0 0 1.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 0 0 8 16ZM3 5a5 5 0 0 1 10 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.519 1.519 0 0 1 13.482 13H2.518a1.516 1.516 0 0 1-1.263-2.36l1.703-2.554A.255.255 0 0 0 3 7.947Zm5-3.5A3.5 3.5 0 0 0 4.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.017.017 0 0 0-.003.01l.001.006c0 .002.002.004.004.006l.006.004.007.001h10.964l.007-.001.006-.004.004-.006.001-.007a.017.017 0 0 0-.003-.01l-1.703-2.554a1.745 1.745 0 0 1-.294-.97V5A3.5 3.5 0 0 0 8 1.5Z"></path>
+</svg>
+    </a>
+    <tool-tip id="notification-indicator-tooltip" data-target="notification-indicator.tooltip" for="AppHeader-notifications-button" popover="manual" data-direction="sw" data-type="label" data-view-component="true" class="sr-only position-absolute" aria-hidden="true" role="tooltip"><template shadowrootmode="open"><style>
+      :host {
+        --tooltip-top: var(--tool-tip-position-top, 0);
+        --tooltip-left: var(--tool-tip-position-left, 0);
+        padding: var(--overlay-paddingBlock-condensed) var(--overlay-padding-condensed) !important;
+        font: var(--text-body-shorthand-small);
+        color: var(--tooltip-fgColor, var(--fgColor-onEmphasis)) !important;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: none;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: break-word;
+        white-space: pre;
+        background: var(--tooltip-bgColor, var(--bgColor-emphasis)) !important;
+        border-radius: var(--borderRadius-medium);
+        border: 0 !important;
+        opacity: 0;
+        max-width: var(--overlay-width-small);
+        word-wrap: break-word;
+        white-space: normal;
+        width: max-content !important;
+        inset: var(--tooltip-top) auto auto var(--tooltip-left) !important;
+        overflow: visible !important;
+        text-wrap: balance;
+      }
+
+      :host(:is(.tooltip-n, .tooltip-nw, .tooltip-ne)) {
+        --tooltip-top: calc(var(--tool-tip-position-top, 0) - var(--overlay-offset, 0.25rem));
+        --tooltip-left: var(--tool-tip-position-left);
+      }
+
+      :host(:is(.tooltip-s, .tooltip-sw, .tooltip-se)) {
+        --tooltip-top: calc(var(--tool-tip-position-top, 0) + var(--overlay-offset, 0.25rem));
+        --tooltip-left: var(--tool-tip-position-left);
+      }
+
+      :host(.tooltip-w) {
+        --tooltip-top: var(--tool-tip-position-top);
+        --tooltip-left: calc(var(--tool-tip-position-left, 0) - var(--overlay-offset, 0.25rem));
+      }
+
+      :host(.tooltip-e) {
+        --tooltip-top: var(--tool-tip-position-top);
+        --tooltip-left: calc(var(--tool-tip-position-left, 0) + var(--overlay-offset, 0.25rem));
+      }
+
+      :host:after{
+        position: absolute;
+        display: block;
+        right: 0;
+        left: 0;
+        height: var(--overlay-offset, 0.25rem);
+        content: "";
+      }
+
+      :host(.tooltip-s):after,
+      :host(.tooltip-se):after,
+      :host(.tooltip-sw):after {
+        bottom: 100%
+      }
+
+      :host(.tooltip-n):after,
+      :host(.tooltip-ne):after,
+      :host(.tooltip-nw):after {
+        top: 100%;
+      }
+
+      @keyframes tooltip-appear {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      :host(:popover-open),
+      :host(:popover-open):before {
+        animation-name: tooltip-appear;
+        animation-duration: .1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+      }
+
+      :host(.\:popover-open) {
+        animation-name: tooltip-appear;
+        animation-duration: .1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+      }
+
+      @media (forced-colors: active) {
+        :host {
+          outline: solid 1px transparent;
+        }
+
+        :host:before {
+          display: none;
+        }
+      }
+    </style><slot></slot></template>You have no unread notifications</tool-tip>
+</notification-indicator>
+    </div>
+
+    <div class="Header-item mr-0 mr-md-1">
+      <span data-view-component="true" class="position-relative"><a id="gists-header-new-gist" href="https://gist.github.com/" data-view-component="true" class="Link" aria-describedby="tooltip-43523052-f1a9-4605-99ea-013d44c32faa"><svg aria-label="Create new gist" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-plus Header-link">
+    <path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path>
+</svg></a>  <tool-tip id="tooltip-43523052-f1a9-4605-99ea-013d44c32faa" for="gists-header-new-gist" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute" role="tooltip"><template shadowrootmode="open"><style>
+      :host {
+        --tooltip-top: var(--tool-tip-position-top, 0);
+        --tooltip-left: var(--tool-tip-position-left, 0);
+        padding: var(--overlay-paddingBlock-condensed) var(--overlay-padding-condensed) !important;
+        font: var(--text-body-shorthand-small);
+        color: var(--tooltip-fgColor, var(--fgColor-onEmphasis)) !important;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: none;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: break-word;
+        white-space: pre;
+        background: var(--tooltip-bgColor, var(--bgColor-emphasis)) !important;
+        border-radius: var(--borderRadius-medium);
+        border: 0 !important;
+        opacity: 0;
+        max-width: var(--overlay-width-small);
+        word-wrap: break-word;
+        white-space: normal;
+        width: max-content !important;
+        inset: var(--tooltip-top) auto auto var(--tooltip-left) !important;
+        overflow: visible !important;
+        text-wrap: balance;
+      }
+
+      :host(:is(.tooltip-n, .tooltip-nw, .tooltip-ne)) {
+        --tooltip-top: calc(var(--tool-tip-position-top, 0) - var(--overlay-offset, 0.25rem));
+        --tooltip-left: var(--tool-tip-position-left);
+      }
+
+      :host(:is(.tooltip-s, .tooltip-sw, .tooltip-se)) {
+        --tooltip-top: calc(var(--tool-tip-position-top, 0) + var(--overlay-offset, 0.25rem));
+        --tooltip-left: var(--tool-tip-position-left);
+      }
+
+      :host(.tooltip-w) {
+        --tooltip-top: var(--tool-tip-position-top);
+        --tooltip-left: calc(var(--tool-tip-position-left, 0) - var(--overlay-offset, 0.25rem));
+      }
+
+      :host(.tooltip-e) {
+        --tooltip-top: var(--tool-tip-position-top);
+        --tooltip-left: calc(var(--tool-tip-position-left, 0) + var(--overlay-offset, 0.25rem));
+      }
+
+      :host:after{
+        position: absolute;
+        display: block;
+        right: 0;
+        left: 0;
+        height: var(--overlay-offset, 0.25rem);
+        content: "";
+      }
+
+      :host(.tooltip-s):after,
+      :host(.tooltip-se):after,
+      :host(.tooltip-sw):after {
+        bottom: 100%
+      }
+
+      :host(.tooltip-n):after,
+      :host(.tooltip-ne):after,
+      :host(.tooltip-nw):after {
+        top: 100%;
+      }
+
+      @keyframes tooltip-appear {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      :host(:popover-open),
+      :host(:popover-open):before {
+        animation-name: tooltip-appear;
+        animation-duration: .1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+      }
+
+      :host(.\:popover-open) {
+        animation-name: tooltip-appear;
+        animation-duration: .1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+      }
+
+      @media (forced-colors: active) {
+        :host {
+          outline: solid 1px transparent;
+        }
+
+        :host:before {
+          display: none;
+        }
+      }
+    </style><slot></slot></template>Create new gist</tool-tip></span>    </div>
+
+    <div class="Header-item position-relative mr-0 d-none d-md-flex" id="user-links">
+      <action-menu data-select-variant="none" data-view-component="true" data-catalyst="" data-ready="true">
+  <focus-group direction="vertical" mnemonics="" retain="">
+    <button data-analytics-event="{&quot;analytics-event&quot;:&quot;{\&quot;category\&quot;:\&quot;Header\&quot;,\&quot;action\&quot;:\&quot;go to profile\&quot;,\&quot;label\&quot;:\&quot;text:Signed in as\&quot;}&quot;}" id="action-menu-3c67c9fa-7533-47cb-9662-69f0ea82d21e-button" popovertarget="action-menu-3c67c9fa-7533-47cb-9662-69f0ea82d21e-overlay" aria-label="View profile and more" aria-controls="action-menu-3c67c9fa-7533-47cb-9662-69f0ea82d21e-list" aria-haspopup="true" type="button" data-view-component="true" class="Header-link Button--invisible Button--small Button">  <span class="Button-content">
+    <span class="Button-label"><img class="avatar avatar-user" src="./200835ashniharashids9-blip’s gists_files/246315954" width="20" height="20" alt="@200835ashniharashids9-blip"></span>
+  </span>
+    <span class="Button-visual Button-trailingAction">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down Header-link">
+    <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
+</svg>
+    </span>
+</button>
+
+
+<anchored-position data-target="action-menu.overlay" id="action-menu-3c67c9fa-7533-47cb-9662-69f0ea82d21e-overlay" anchor="action-menu-3c67c9fa-7533-47cb-9662-69f0ea82d21e-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true" style="inset: 34px auto auto 0px;">
+  <div data-view-component="true" class="Overlay Overlay--size-auto">
+    
+      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list data-catalyst="">
+  <div data-view-component="true">
+    <ul aria-labelledby="action-menu-3c67c9fa-7533-47cb-9662-69f0ea82d21e-button" id="action-menu-3c67c9fa-7533-47cb-9662-69f0ea82d21e-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" data-analytics-event="{&quot;analytics-event&quot;:&quot;{\&quot;category\&quot;:\&quot;Header\&quot;,\&quot;action\&quot;:\&quot;go to profile\&quot;,\&quot;label\&quot;:\&quot;text:Signed in as\&quot;}&quot;}" id="item-c466c8c8-f858-47e2-9769-1c5e0a86f2ee" href="https://gist.github.com/200835ashniharashids9-blip" role="menuitem" data-view-component="true" class="ActionListContent">
+      
+        <span data-view-component="true" class="ActionListItem-label">
+                    Signed in as <span data-view-component="true" class="Truncate text-bold">
+    <span style="max-width: 300px;" data-view-component="true" class="Truncate-text">200835ashniharashids9-blip</span>
+</span>
+</span>      
+</a>
+  
+</li>
+        <li role="presentation" aria-hidden="true" data-view-component="true" class="ActionList-sectionDivider"></li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" data-analytics-event="{&quot;analytics-event&quot;:&quot;{\&quot;category\&quot;:\&quot;Header\&quot;,\&quot;action\&quot;:\&quot;go to your gists\&quot;,\&quot;label\&quot;:\&quot;text:your gists\&quot;}&quot;}" id="item-1f33138e-26d5-4f9f-a408-9aff73d5d976" href="https://gist.github.com/200835ashniharashids9-blip" role="menuitem" data-view-component="true" class="ActionListContent">
+      
+        <span data-view-component="true" class="ActionListItem-label">
+                    Your gists
+
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" data-analytics-event="{&quot;analytics-event&quot;:&quot;{\&quot;category\&quot;:\&quot;Header\&quot;,\&quot;action\&quot;:\&quot;go to starred gists\&quot;,\&quot;label\&quot;:\&quot;text:starred gists\&quot;}&quot;}" id="item-f8f0222a-4a16-497f-9d07-c76368312672" href="https://gist.github.com/200835ashniharashids9-blip/starred" role="menuitem" data-view-component="true" class="ActionListContent">
+      
+        <span data-view-component="true" class="ActionListItem-label">
+                    Starred gists
+
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" data-analytics-event="{&quot;analytics-event&quot;:&quot;{\&quot;category\&quot;:\&quot;Header\&quot;,\&quot;action\&quot;:\&quot;go to help\&quot;,\&quot;label\&quot;:\&quot;text:help\&quot;}&quot;}" id="item-fffe005e-39d5-4828-b7b9-0e67af12e9c2" href="https://docs.github.com/" role="menuitem" data-view-component="true" class="ActionListContent">
+      
+        <span data-view-component="true" class="ActionListItem-label">
+                    Help
+
+</span>      
+</a>
+  
+</li>
+        <li role="presentation" aria-hidden="true" data-view-component="true" class="ActionList-sectionDivider"></li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" data-analytics-event="{&quot;analytics-event&quot;:&quot;{\&quot;category\&quot;:\&quot;Header\&quot;,\&quot;action\&quot;:\&quot;go to profile\&quot;,\&quot;label\&quot;:\&quot;text:your profile\&quot;}&quot;}" id="item-381d905b-0776-487c-a2a4-ff90ff553f88" href="https://github.com/200835ashniharashids9-blip" role="menuitem" data-view-component="true" class="ActionListContent">
+      
+        <span data-view-component="true" class="ActionListItem-label">
+                    Your GitHub profile
+
+</span>      
+</a>
+  
+</li>
+        <li role="presentation" aria-hidden="true" data-view-component="true" class="ActionList-sectionDivider"></li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    <!-- '"` --><!-- </textarea></xmp> --><form role="none" action="https://gist.github.com/auth/github/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="lM0VK5YpEydXoamroEAkf8V3DKf82O4zbAuLoBStsMOdJnwjRVICf9GtMHzS206P_9KijXcJi_xIiXAmsvwVNQ" autocomplete="off">
+        <input type="hidden" data-list-item-input="true" data-view-component="true">
+    
+    
+    <button tabindex="-1" data-turbo="false" data-analytics-event="{&quot;analytics-event&quot;:&quot;{\&quot;category\&quot;:\&quot;Header\&quot;,\&quot;action\&quot;:\&quot;sign out\&quot;,\&quot;label\&quot;:\&quot;text:sign out\&quot;}&quot;}" id="item-0e1fb91b-95a1-437c-b78d-57ecc8eaf0ed" type="submit" role="menuitem" data-view-component="true" class="ActionListContent">
+      
+        <span data-view-component="true" class="ActionListItem-label">
+                    Sign out
+
+</span>      
+</button>
+</form>  
+</li>
+</ul>    
+</div></action-list>
+
+
+</div>
+      
+</div></anchored-position>  </focus-group>
+</action-menu>    </div>
+</div>
+
+
+
+      <div hidden="hidden" data-view-component="true" class="js-stale-session-flash stale-session-flash flash flash-warn flash-full">
+  
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
+</svg>
+        <span class="js-stale-session-flash-signed-in" hidden="">You signed in with another tab or window. <a class="Link--inTextBlock" href="https://gist.github.com/200835ashniharashids9-blip">Reload</a> to refresh your session.</span>
+        <span class="js-stale-session-flash-signed-out" hidden="">You signed out in another tab or window. <a class="Link--inTextBlock" href="https://gist.github.com/200835ashniharashids9-blip">Reload</a> to refresh your session.</span>
+        <span class="js-stale-session-flash-switched" hidden="">You switched accounts on another tab or window. <a class="Link--inTextBlock" href="https://gist.github.com/200835ashniharashids9-blip">Reload</a> to refresh your session.</span>
+
+    <button id="icon-button-98e50d53-1f37-424f-b4e1-1a044b5e0ddc" aria-labelledby="tooltip-a3abeb74-09b6-4ead-94c7-cc08c9c131dd" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium flash-close js-flash-close">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x Button-visual">
+    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+</button><tool-tip id="tooltip-a3abeb74-09b6-4ead-94c7-cc08c9c131dd" for="icon-button-98e50d53-1f37-424f-b4e1-1a044b5e0ddc" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute" aria-hidden="true" role="tooltip"><template shadowrootmode="open"><style>
+      :host {
+        --tooltip-top: var(--tool-tip-position-top, 0);
+        --tooltip-left: var(--tool-tip-position-left, 0);
+        padding: var(--overlay-paddingBlock-condensed) var(--overlay-padding-condensed) !important;
+        font: var(--text-body-shorthand-small);
+        color: var(--tooltip-fgColor, var(--fgColor-onEmphasis)) !important;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: none;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: break-word;
+        white-space: pre;
+        background: var(--tooltip-bgColor, var(--bgColor-emphasis)) !important;
+        border-radius: var(--borderRadius-medium);
+        border: 0 !important;
+        opacity: 0;
+        max-width: var(--overlay-width-small);
+        word-wrap: break-word;
+        white-space: normal;
+        width: max-content !important;
+        inset: var(--tooltip-top) auto auto var(--tooltip-left) !important;
+        overflow: visible !important;
+        text-wrap: balance;
+      }
+
+      :host(:is(.tooltip-n, .tooltip-nw, .tooltip-ne)) {
+        --tooltip-top: calc(var(--tool-tip-position-top, 0) - var(--overlay-offset, 0.25rem));
+        --tooltip-left: var(--tool-tip-position-left);
+      }
+
+      :host(:is(.tooltip-s, .tooltip-sw, .tooltip-se)) {
+        --tooltip-top: calc(var(--tool-tip-position-top, 0) + var(--overlay-offset, 0.25rem));
+        --tooltip-left: var(--tool-tip-position-left);
+      }
+
+      :host(.tooltip-w) {
+        --tooltip-top: var(--tool-tip-position-top);
+        --tooltip-left: calc(var(--tool-tip-position-left, 0) - var(--overlay-offset, 0.25rem));
+      }
+
+      :host(.tooltip-e) {
+        --tooltip-top: var(--tool-tip-position-top);
+        --tooltip-left: calc(var(--tool-tip-position-left, 0) + var(--overlay-offset, 0.25rem));
+      }
+
+      :host:after{
+        position: absolute;
+        display: block;
+        right: 0;
+        left: 0;
+        height: var(--overlay-offset, 0.25rem);
+        content: "";
+      }
+
+      :host(.tooltip-s):after,
+      :host(.tooltip-se):after,
+      :host(.tooltip-sw):after {
+        bottom: 100%
+      }
+
+      :host(.tooltip-n):after,
+      :host(.tooltip-ne):after,
+      :host(.tooltip-nw):after {
+        top: 100%;
+      }
+
+      @keyframes tooltip-appear {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      :host(:popover-open),
+      :host(:popover-open):before {
+        animation-name: tooltip-appear;
+        animation-duration: .1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+      }
+
+      :host(.\:popover-open) {
+        animation-name: tooltip-appear;
+        animation-duration: .1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+      }
+
+      @media (forced-colors: active) {
+        :host {
+          outline: solid 1px transparent;
+        }
+
+        :host:before {
+          display: none;
+        }
+      }
+    </style><slot></slot></template>Dismiss alert</tool-tip>
+
+
+  
+</div>
+        
+          
+    </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+
+
+
+
+
+
+    <div id="js-flash-container" class="flash-container" data-turbo-replace="">
+
+
+
+
+  <template class="js-flash-template"></template>
+</div>
+
+
+    
+  <notification-shelf-watcher data-base-url="https://github.com/notifications/beta/shelf" data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MjQ2MzE1OTU0IiwidCI6MTc2NDIzMDEyOX0=--305b8bbe45c9f8719d0214a58cf4f10b70ae3283745d746785d4892c210b06cb" data-view-component="true" class="js-socket-channel" data-refresh-delay="500" data-catalyst="" data-throttle-delay="5000"></notification-shelf-watcher>
+  <div hidden="" data-initial="" data-target="notification-shelf-watcher.placeholder"></div>
+
+
+
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled="" data-discussion-hovercards-enabled="" data-issue-and-pr-hovercards-enabled="" data-project-hovercards-enabled="">
+        <div itemscope="" itemtype="http://schema.org/Code">
+    <main id="gist-pjax-container">
+      
+
+
+
+
+<div class="container-xl px-3 px-md-4 px-lg-5 mt-4">
+
+  <div class="gutter d-flex flex-md-row flex-column">
+      
+<div class="h-card col-md-3 col-12" itemscope="" itemtype="http://schema.org/Person">
+  <div class="js-profile-editable-replace">
+  <div class="clearfix d-flex d-md-block flex-items-center mb-4 mb-md-0">
+    <div class="position-relative d-inline-block col-2 col-md-12 mr-3 mr-md-0 flex-shrink-0" style="z-index:4;">
+        <span data-view-component="true" class="position-relative"><a aria-label="Change your avatar" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:246315954,&quot;target&quot;:&quot;EDIT_AVATAR&quot;,&quot;user_id&quot;:246315954,&quot;originating_url&quot;:&quot;https://gist.github.com/200835ashniharashids9-blip&quot;}}" data-hydro-click-hmac="001a007cbd17e036661c7176214f8aa6570197d65fbf52ca5221b5510c228892" id="upload-avatar-link" href="https://github.com/account" data-view-component="true" class="Link d-block" aria-describedby="tooltip-b9dd51a4-793c-4385-8194-ee4b9d82d9b1"><img style="height:auto;" alt="" src="./200835ashniharashids9-blip’s gists_files/246315954(1)" width="260" height="260" class="avatar avatar-user width-full border color-bg-default"></a>  <tool-tip id="tooltip-b9dd51a4-793c-4385-8194-ee4b9d82d9b1" for="upload-avatar-link" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute" role="tooltip"><template shadowrootmode="open"><style>
+      :host {
+        --tooltip-top: var(--tool-tip-position-top, 0);
+        --tooltip-left: var(--tool-tip-position-left, 0);
+        padding: var(--overlay-paddingBlock-condensed) var(--overlay-padding-condensed) !important;
+        font: var(--text-body-shorthand-small);
+        color: var(--tooltip-fgColor, var(--fgColor-onEmphasis)) !important;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: none;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: break-word;
+        white-space: pre;
+        background: var(--tooltip-bgColor, var(--bgColor-emphasis)) !important;
+        border-radius: var(--borderRadius-medium);
+        border: 0 !important;
+        opacity: 0;
+        max-width: var(--overlay-width-small);
+        word-wrap: break-word;
+        white-space: normal;
+        width: max-content !important;
+        inset: var(--tooltip-top) auto auto var(--tooltip-left) !important;
+        overflow: visible !important;
+        text-wrap: balance;
+      }
+
+      :host(:is(.tooltip-n, .tooltip-nw, .tooltip-ne)) {
+        --tooltip-top: calc(var(--tool-tip-position-top, 0) - var(--overlay-offset, 0.25rem));
+        --tooltip-left: var(--tool-tip-position-left);
+      }
+
+      :host(:is(.tooltip-s, .tooltip-sw, .tooltip-se)) {
+        --tooltip-top: calc(var(--tool-tip-position-top, 0) + var(--overlay-offset, 0.25rem));
+        --tooltip-left: var(--tool-tip-position-left);
+      }
+
+      :host(.tooltip-w) {
+        --tooltip-top: var(--tool-tip-position-top);
+        --tooltip-left: calc(var(--tool-tip-position-left, 0) - var(--overlay-offset, 0.25rem));
+      }
+
+      :host(.tooltip-e) {
+        --tooltip-top: var(--tool-tip-position-top);
+        --tooltip-left: calc(var(--tool-tip-position-left, 0) + var(--overlay-offset, 0.25rem));
+      }
+
+      :host:after{
+        position: absolute;
+        display: block;
+        right: 0;
+        left: 0;
+        height: var(--overlay-offset, 0.25rem);
+        content: "";
+      }
+
+      :host(.tooltip-s):after,
+      :host(.tooltip-se):after,
+      :host(.tooltip-sw):after {
+        bottom: 100%
+      }
+
+      :host(.tooltip-n):after,
+      :host(.tooltip-ne):after,
+      :host(.tooltip-nw):after {
+        top: 100%;
+      }
+
+      @keyframes tooltip-appear {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      :host(:popover-open),
+      :host(:popover-open):before {
+        animation-name: tooltip-appear;
+        animation-duration: .1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+      }
+
+      :host(.\:popover-open) {
+        animation-name: tooltip-appear;
+        animation-duration: .1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+      }
+
+      @media (forced-colors: active) {
+        :host {
+          outline: solid 1px transparent;
+        }
+
+        :host:before {
+          display: none;
+        }
+      }
+    </style><slot></slot></template>Change your avatar</tool-tip></span>      
+  <div class="user-status-container position-relative hide-sm hide-md">
+    
+    <div class="f5 js-user-status-context user-status-circle-badge-container user-status-editable" data-url="/users/status?circle=1&amp;compact=0&amp;link_mentions=1&amp;truncate=0">
+      
+<div class="js-user-status-container user-status-circle-badge d-inline-block lh-condensed-ultra p-2" data-team-hovercards-enabled="">
+  <!-- '"` --><!-- </textarea></xmp> --><form class="js-user-status-form js-user-status-dialog-form" data-format="html" data-turbo="false" action="https://gist.github.com/users/status?circle=1&amp;compact=0&amp;link_mentions=1&amp;truncate=0" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" autocomplete="off"><input type="hidden" name="authenticity_token" value="nKdDNPFIaio5ZTVyYdT5Q_vg1oXGvZ4hf5ebl1DglXHoSyamopBUH-oiuQnS0psvRn-yRY8075hbthdpsmBCEA">
+
+  <button data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:246315954,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:246315954,&quot;originating_url&quot;:&quot;https://gist.github.com/200835ashniharashids9-blip&quot;}}" data-hydro-click-hmac="6ea127faefa74cf9162e3f48c7aea59b4fd109f22169f26f9e94ca945e15099a" data-show-dialog-id="user-status-dialog-profile" role="button" id="dialog-show-user-status-dialog-profile" type="button" data-view-component="true" class="js-toggle-user-status-edit toggle-user-status-edit Link--secondary no-underline min-width-0 Button--link Button--medium Button d-block">  <span class="Button-content">
+    <span class="Button-label"><div class="d-flex flex-items-center flex-items-stretch">
+          <div class="f6 lh-condensed user-status-header d-inline-flex user-status-emoji-only-header circle">
+            <div class="user-status-emoji-container flex-shrink-0 mr-2 d-flex flex-items-center flex-justify-center ">
+              <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm3.82 1.636a.75.75 0 0 1 1.038.175l.007.009c.103.118.22.222.35.31.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371.13-.088.247-.192.35-.31l.007-.008a.75.75 0 0 1 1.222.87l-.022-.015c.02.013.021.015.021.015v.001l-.001.002-.002.003-.005.007-.014.019a2.066 2.066 0 0 1-.184.213c-.16.166-.338.316-.53.445-.63.418-1.37.638-2.127.629-.946 0-1.652-.308-2.126-.63a3.331 3.331 0 0 1-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 0 1 .183-1.044ZM12 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM5 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm5.25 2.25.592.416a97.71 97.71 0 0 0-.592-.416Z"></path></svg>
+            </div>
+          </div>
+          <div class="user-status-message-wrapper f6 min-width-0 ws-normal">
+            <div class="css-truncate css-truncate-target width-fit color-fg-default">
+                <span class="color-fg-muted">Set status</span>
+            </div>
+          </div>
+        </div></span>
+  </span>
+</button>
+
+<dialog-helper>
+  <dialog id="user-status-dialog-profile" aria-modal="true" aria-labelledby="user-status-dialog-profile-title" aria-describedby="user-status-dialog-profile-description" data-view-component="true" class="Overlay Overlay-whenNarrow Overlay--size-medium-portrait Overlay--motion-scaleFade js-user-status-details Overlay--disableScroll flex-self-center">
+    <div data-view-component="true" class="Overlay-header">
+  <div class="Overlay-headerContentWrap">
+    <div class="Overlay-titleWrap">
+      <h1 class="Overlay-title " id="user-status-dialog-profile-title">
+        Edit status
+      </h1>
+        
+    </div>
+    <div class="Overlay-actionWrap">
+      <button data-close-dialog-id="user-status-dialog-profile" aria-label="Close" type="button" data-view-component="true" class="close-button Overlay-closeButton"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
+    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
+</svg></button>
+    </div>
+  </div>
+  
+</div>
+      <scrollable-region data-labelled-by="user-status-dialog-profile-title" data-catalyst="" style="overflow: auto;">
+        <div data-view-component="true" class="Overlay-body">      <div class="d-flex flex-column gap-2 mt-3">
+        
+<input type="hidden" name="emoji" class="js-user-status-emoji-field" value="">
+<div class="js-characters-remaining-container">
+  <div class="js-user-status-form-group d-flex flex-row">
+    <button type="button" data-view-component="true" class="js-toggle-user-status-emoji-picker Button--iconOnly rounded-right-0 border-right-0 Button--secondary Button--medium Button">  <span class="Button-content">
+    <span class="Button-label"><span class="js-user-status-original-emoji" hidden=""></span>
+      <span class="js-user-status-custom-emoji"></span>
+      <span class="js-user-status-no-emoji-icon">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-smiley">
+    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm3.82 1.636a.75.75 0 0 1 1.038.175l.007.009c.103.118.22.222.35.31.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371.13-.088.247-.192.35-.31l.007-.008a.75.75 0 0 1 1.222.87l-.022-.015c.02.013.021.015.021.015v.001l-.001.002-.002.003-.005.007-.014.019a2.066 2.066 0 0 1-.184.213c-.16.166-.338.316-.53.445-.63.418-1.37.638-2.127.629-.946 0-1.652-.308-2.126-.63a3.331 3.331 0 0 1-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 0 1 .183-1.044ZM12 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM5 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm5.25 2.25.592.416a97.71 97.71 0 0 0-.592-.416Z"></path>
+</svg>
+      </span>
+      <span class="sr-only">Choose an emoji</span></span>
+  </span>
+</button>
+    <text-expander keys=": @" data-mention-url="/autocomplete/user-suggestions" data-emoji-url="/autocomplete/emoji" class="flex-1">
+        <primer-text-field class="FormControl width-full FormControl--fullWidth" data-catalyst="">
+      <label class="sr-only FormControl-label" for="message">
+        What is your current status?
+</label>    
+  <div class="FormControl-input-wrap">
+    
+      <input placeholder="What&#39;s happening?" autocomplete="off" data-no-org-url="/autocomplete/user-suggestions" data-org-url="/suggestions?mention_suggester=1" data-maxlength="80" aria-describedby="validation-fe485aea-9428-4a0a-a306-3536689e8638 caption-fe485aea-9428-4a0a-a306-3536689e8638" data-target="primer-text-field.inputElement " class="form-control FormControl-inset FormControl-input FormControl-medium js-user-status-message-field js-characters-remaining-field rounded-left-0" type="text" name="message" id="message">
+</div>
+      <div class="FormControl-inlineValidation" id="validation-fe485aea-9428-4a0a-a306-3536689e8638" hidden="hidden">
+  <span class="FormControl-inlineValidation--visual" data-target="primer-text-field.validationSuccessIcon" hidden=""><svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-check-circle-fill">
+    <path d="M6 0a6 6 0 1 1 0 12A6 6 0 0 1 6 0Zm-.705 8.737L9.63 4.403 8.392 3.166 5.295 6.263l-1.7-1.702L2.356 5.8l2.938 2.938Z"></path>
+</svg></span>
+  <span class=" FormControl-inlineValidation--visual" data-target="primer-text-field.validationErrorIcon"><svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-alert-fill">
+    <path d="M4.855.708c.5-.896 1.79-.896 2.29 0l4.675 8.351a1.312 1.312 0 0 1-1.146 1.954H1.33A1.313 1.313 0 0 1 .183 9.058ZM7 7V3H5v4Zm-1 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
+</svg></span>
+  <span></span>
+</div>
+      <span class="FormControl-caption" id="caption-fe485aea-9428-4a0a-a306-3536689e8638"><span hidden="hidden" data-suffix="remaining" data-view-component="true" class="js-characters-remaining">80 remaining</span></span>
+
+</primer-text-field>
+    </text-expander>
+  </div>
+</div>
+<include-fragment loading="lazy" src="/users/status/emoji?live_region_id=user-status-dialog-profile-live" data-nonce="v2:1146c758-b043-c853-df9e-973d1b13ee0c" data-view-component="true"><template shadowrootmode="open"><style>:host {display: block;}</style><slot></slot></template>
+  
+  <div data-show-on-forbidden-error="" hidden="">
+    <div class="Box">
+  <div class="blankslate-container">
+    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
+      
+
+      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
+</h3>
+      <p data-view-component="true">        </p><p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="https://gist.github.com/200835ashniharashids9-blip" aria-label="Please reload this page">Please reload this page</a>.</p>
+<p></p>
+
+</div>  </div>
+</div>  </div>
+</include-fragment>
+<div class="border-bottom d-flex flex-column gap-1 pb-3">
+  <div class="js-user-status-suggestions" hidden="">
+    <action-list data-catalyst="">
+  <div data-view-component="true">
+      <div data-view-component="true" class="ActionList-sectionDivider">
+  <h2 id="heading-title-4561a0e4-3e4e-4ee5-afb0-39904a73dfc0" data-view-component="true" class="ActionList-sectionDivider-title">
+    Suggestions
+</h2>  
+</div>
+    <ul aria-label="Suggestions" id="action-list-5b273c93-5585-49f3-a666-4557b28d70e0" role="list" aria-labelledby="heading-title-4561a0e4-3e4e-4ee5-afb0-39904a73dfc0" data-view-component="true" class="ActionListWrap">
+        <li data-targets="action-list.items" data-view-component="true" class="ActionListItem">
+    
+    
+    <button value=":palm_tree:" id="item-c5c64720-5ffe-447f-ad0c-dd6c8379ff4d" type="button" data-view-component="true" class="js-predefined-user-status ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <span aria-hidden="true" data-view-component="true" class="js-predefined-user-status-emoji"><g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/assets/1f334-453759c3779f.png">🌴</g-emoji></span>
+        </span>
+      
+        <span data-view-component="true" class="js-predefined-user-status-message ActionListItem-label">
+          On vacation
+</span>      
+</button>
+  
+</li>
+        <li data-targets="action-list.items" data-view-component="true" class="ActionListItem">
+    
+    
+    <button value=":face_with_thermometer:" id="item-f892aaf7-7118-4717-89f0-7b736bcc9307" type="button" data-view-component="true" class="js-predefined-user-status ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <span aria-hidden="true" data-view-component="true" class="js-predefined-user-status-emoji"><g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/assets/1f912-e44df2e127d9.png">🤒</g-emoji></span>
+        </span>
+      
+        <span data-view-component="true" class="js-predefined-user-status-message ActionListItem-label">
+          Out sick
+</span>      
+</button>
+  
+</li>
+        <li data-targets="action-list.items" data-view-component="true" class="ActionListItem">
+    
+    
+    <button value=":house:" id="item-98953fe3-2c43-4886-8187-4abbf8307c22" type="button" data-view-component="true" class="js-predefined-user-status ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <span aria-hidden="true" data-view-component="true" class="js-predefined-user-status-emoji"><g-emoji alias="house" fallback-src="https://github.githubassets.com/assets/1f3e0-04e67e699536.png">🏠</g-emoji></span>
+        </span>
+      
+        <span data-view-component="true" class="js-predefined-user-status-message ActionListItem-label">
+          Working from home
+</span>      
+</button>
+  
+</li>
+        <li data-targets="action-list.items" data-view-component="true" class="ActionListItem">
+    
+    
+    <button value=":dart:" id="item-9e337584-d6e1-4904-979f-a859b5f301c4" type="button" data-view-component="true" class="js-predefined-user-status ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <span aria-hidden="true" data-view-component="true" class="js-predefined-user-status-emoji"><g-emoji alias="dart" fallback-src="https://github.githubassets.com/assets/1f3af-c334ccb56185.png">🎯</g-emoji></span>
+        </span>
+      
+        <span data-view-component="true" class="js-predefined-user-status-message ActionListItem-label">
+          Focusing
+</span>      
+</button>
+  
+</li>
+</ul>    
+</div></action-list>
+  </div>
+  <div class="pt-3">
+    <div class="FormControl-checkbox-wrap">
+  <input name="limited_availability" type="hidden" value="0" autocomplete="off"><input data-default-message="I may be slow to respond." aria-describedby="caption-40f7df7c-cc93-4a2f-8ac3-a49388c517b2" class="FormControl-checkbox js-user-status-limited-availability-checkbox" type="checkbox" value="1" name="limited_availability" id="limited_availability">
+  <span class="FormControl-checkbox-labelWrap">
+    <label class="FormControl-label" for="limited_availability">
+      Busy
+</label>        <span class="FormControl-caption" id="caption-40f7df7c-cc93-4a2f-8ac3-a49388c517b2">When others mention you, assign you, or request your review, GitHub will let them know that you have limited availability.</span>
+
+  </span>
+</div>
+  </div>
+</div>
+<div class="d-flex gap-2 flex-column">
+  <div class="mt-2">
+  
+  <div class="FormControl width-full FormControl--fullWidth">
+      <label for="expires_at" class="FormControl-label">
+        Clear status
+</label>    
+  <div class="FormControl-select-wrap">
+    <select id="expires_at" test_selector="test-user-status-expiration" aria-describedby="validation-4f824dc2-58e5-45cd-91ed-f77f255f6d48 caption-4f824dc2-58e5-45cd-91ed-f77f255f6d48" class="form-select FormControl-select FormControl-medium" name="expires_at"><option selected="selected" value=" ">Never</option>
+<option value="2025-11-27T14:25:29+06:00">in 30 minutes</option>
+<option value="2025-11-27T14:55:29+06:00">in 1 hour</option>
+<option value="2025-11-27T17:55:29+06:00">in 4 hours</option>
+<option value="2025-11-27T23:59:59+06:00">after today</option>
+<option value="2025-11-30T23:59:59+06:00">after this week</option>
+<option value="2025-12-27T13:55:29+06:00">after a month</option></select>
+</div>
+      <div class="FormControl-inlineValidation" id="validation-4f824dc2-58e5-45cd-91ed-f77f255f6d48" hidden="hidden">
+  <span class="FormControl-inlineValidation--visual" data-target="" hidden=""><svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-check-circle-fill">
+    <path d="M6 0a6 6 0 1 1 0 12A6 6 0 0 1 6 0Zm-.705 8.737L9.63 4.403 8.392 3.166 5.295 6.263l-1.7-1.702L2.356 5.8l2.938 2.938Z"></path>
+</svg></span>
+  <span class=" FormControl-inlineValidation--visual" data-target=""><svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-alert-fill">
+    <path d="M4.855.708c.5-.896 1.79-.896 2.29 0l4.675 8.351a1.312 1.312 0 0 1-1.146 1.954H1.33A1.313 1.313 0 0 1 .183 9.058ZM7 7V3H5v4Zm-1 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
+</svg></span>
+  <span></span>
+</div>
+      <span class="FormControl-caption" id="caption-4f824dc2-58e5-45cd-91ed-f77f255f6d48">How long until this status will automatically clear.</span>
+
+</div></div>
+
+  <include-fragment loading="lazy" src="/users/status/organizations" data-nonce="v2:1146c758-b043-c853-df9e-973d1b13ee0c" data-view-component="true"><template shadowrootmode="open"><style>:host {display: block;}</style><slot></slot></template>
+  
+  <div data-show-on-forbidden-error="" hidden="">
+    <div class="Box">
+  <div class="blankslate-container">
+    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
+      
+
+      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
+</h3>
+      <p data-view-component="true">        </p><p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="https://gist.github.com/200835ashniharashids9-blip" aria-label="Please reload this page">Please reload this page</a>.</p>
+<p></p>
+
+</div>  </div>
+</div>  </div>
+</include-fragment>
+</div>
+
+      </div>
+      <div id="user-status-dialog-profile-live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+</div>
+      </scrollable-region>
+      <div data-view-component="true" class="Overlay-footer Overlay-footer--alignEnd Overlay-footer--divided d-flex flex-nowrap flex-items-center flex-justify-between p-3">      <button type="submit" data-view-component="true" class="js-user-status-submit Button--primary Button--medium Button width-full mr-2">  <span class="Button-content">
+    <span class="Button-label">Set status</span>
+  </span>
+</button>
+      <button type="button" disabled="disabled" data-view-component="true" class="js-clear-user-status-button Button--secondary Button--medium Button width-full ml-2">  <span class="Button-content">
+    <span class="Button-label">Clear status</span>
+  </span>
+</button>
+</div>
+</dialog></dialog-helper>
+</form>
+</div>
+
+    </div>
+  </div>
+
+    </div>
+
+    <div class="vcard-names-container float-left js-profile-editable-names col-12 py-3">
+      <h1 class="vcard-names ">
+        <span class="p-name vcard-fullname d-block overflow-hidden" itemprop="name">
+          
+        </span>
+        <span class="p-nickname vcard-username d-block" itemprop="additionalName">
+          200835ashniharashids9-blip
+
+        </span>
+      </h1>
+    </div>
+  </div>
+
+    <div class="mb-2 user-status-container d-md-none js-user-status-context" data-url="/users/status?circle=0&amp;compact=1&amp;link_mentions=1&amp;truncate=1">
+    
+<div class="js-user-status-container rounded-2 px-2 py-1 mt-2 border" data-team-hovercards-enabled="">
+  <!-- '"` --><!-- </textarea></xmp> --><form class="js-user-status-form js-user-status-dialog-form" data-format="html" data-turbo="false" action="https://gist.github.com/users/status?circle=0&amp;compact=1&amp;link_mentions=1&amp;truncate=0" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" autocomplete="off"><input type="hidden" name="authenticity_token" value="YxcKG0FXjy_JqavwLq9CaRpDK3SvJ7rRNUE3v2BjjG0X-2-JEo-xGhruJ4udqSAFp9xPtOauy2gRYLtBguNbDA">
+
+  <button data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:246315954,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:246315954,&quot;originating_url&quot;:&quot;https://gist.github.com/200835ashniharashids9-blip&quot;}}" data-hydro-click-hmac="6ea127faefa74cf9162e3f48c7aea59b4fd109f22169f26f9e94ca945e15099a" data-show-dialog-id="user-status-dialog-compact-profile" role="button" id="dialog-show-user-status-dialog-compact-profile" type="button" data-view-component="true" class="js-toggle-user-status-edit toggle-user-status-edit Link--secondary no-underline min-width-0 Button--link Button--medium Button d-block">  <span class="Button-content">
+    <span class="Button-label"><div class="d-flex flex-items-center flex-items-stretch">
+          <div class="f6 lh-condensed user-status-header d-flex user-status-emoji-only-header circle">
+            <div class="user-status-emoji-container flex-shrink-0 mr-2 d-flex flex-items-center flex-justify-center lh-condensed-ultra v-align-bottom">
+              <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm3.82 1.636a.75.75 0 0 1 1.038.175l.007.009c.103.118.22.222.35.31.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371.13-.088.247-.192.35-.31l.007-.008a.75.75 0 0 1 1.222.87l-.022-.015c.02.013.021.015.021.015v.001l-.001.002-.002.003-.005.007-.014.019a2.066 2.066 0 0 1-.184.213c-.16.166-.338.316-.53.445-.63.418-1.37.638-2.127.629-.946 0-1.652-.308-2.126-.63a3.331 3.331 0 0 1-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 0 1 .183-1.044ZM12 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM5 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm5.25 2.25.592.416a97.71 97.71 0 0 0-.592-.416Z"></path></svg>
+            </div>
+          </div>
+          <div class="user-status-message-wrapper f6 min-width-0" style="line-height: 20px;">
+            <div class="css-truncate css-truncate-target width-fit color-fg-default text-left">
+                <span class="color-fg-muted">Set status</span>
+            </div>
+          </div>
+        </div></span>
+  </span>
+</button>
+
+<dialog-helper>
+  <dialog id="user-status-dialog-compact-profile" aria-modal="true" aria-labelledby="user-status-dialog-compact-profile-title" aria-describedby="user-status-dialog-compact-profile-description" data-view-component="true" class="Overlay Overlay-whenNarrow Overlay--size-medium-portrait Overlay--motion-scaleFade js-user-status-details Overlay--disableScroll flex-self-center">
+    <div data-view-component="true" class="Overlay-header">
+  <div class="Overlay-headerContentWrap">
+    <div class="Overlay-titleWrap">
+      <h1 class="Overlay-title " id="user-status-dialog-compact-profile-title">
+        Edit status
+      </h1>
+        
+    </div>
+    <div class="Overlay-actionWrap">
+      <button data-close-dialog-id="user-status-dialog-compact-profile" aria-label="Close" type="button" data-view-component="true" class="close-button Overlay-closeButton"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
+    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
+</svg></button>
+    </div>
+  </div>
+  
+</div>
+      <scrollable-region data-labelled-by="user-status-dialog-compact-profile-title" data-catalyst="" style="overflow: auto;">
+        <div data-view-component="true" class="Overlay-body">      <div class="d-flex flex-column gap-2 mt-3">
+        
+<input type="hidden" name="emoji" class="js-user-status-emoji-field" value="">
+<div class="js-characters-remaining-container">
+  <div class="js-user-status-form-group d-flex flex-row">
+    <button type="button" data-view-component="true" class="js-toggle-user-status-emoji-picker Button--iconOnly rounded-right-0 border-right-0 Button--secondary Button--medium Button">  <span class="Button-content">
+    <span class="Button-label"><span class="js-user-status-original-emoji" hidden=""></span>
+      <span class="js-user-status-custom-emoji"></span>
+      <span class="js-user-status-no-emoji-icon">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-smiley">
+    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm3.82 1.636a.75.75 0 0 1 1.038.175l.007.009c.103.118.22.222.35.31.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371.13-.088.247-.192.35-.31l.007-.008a.75.75 0 0 1 1.222.87l-.022-.015c.02.013.021.015.021.015v.001l-.001.002-.002.003-.005.007-.014.019a2.066 2.066 0 0 1-.184.213c-.16.166-.338.316-.53.445-.63.418-1.37.638-2.127.629-.946 0-1.652-.308-2.126-.63a3.331 3.331 0 0 1-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 0 1 .183-1.044ZM12 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM5 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm5.25 2.25.592.416a97.71 97.71 0 0 0-.592-.416Z"></path>
+</svg>
+      </span>
+      <span class="sr-only">Choose an emoji</span></span>
+  </span>
+</button>
+    <text-expander keys=": @" data-mention-url="/autocomplete/user-suggestions" data-emoji-url="/autocomplete/emoji" class="flex-1">
+        <primer-text-field class="FormControl width-full FormControl--fullWidth" data-catalyst="">
+      <label class="sr-only FormControl-label" for="message">
+        What is your current status?
+</label>    
+  <div class="FormControl-input-wrap">
+    
+      <input placeholder="What&#39;s happening?" autocomplete="off" data-no-org-url="/autocomplete/user-suggestions" data-org-url="/suggestions?mention_suggester=1" data-maxlength="80" aria-describedby="validation-c4917528-bdb0-4057-b475-e65c4fdba689 caption-c4917528-bdb0-4057-b475-e65c4fdba689" data-target="primer-text-field.inputElement " class="form-control FormControl-inset FormControl-input FormControl-medium js-user-status-message-field js-characters-remaining-field rounded-left-0" type="text" name="message" id="message">
+</div>
+      <div class="FormControl-inlineValidation" id="validation-c4917528-bdb0-4057-b475-e65c4fdba689" hidden="hidden">
+  <span class="FormControl-inlineValidation--visual" data-target="primer-text-field.validationSuccessIcon" hidden=""><svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-check-circle-fill">
+    <path d="M6 0a6 6 0 1 1 0 12A6 6 0 0 1 6 0Zm-.705 8.737L9.63 4.403 8.392 3.166 5.295 6.263l-1.7-1.702L2.356 5.8l2.938 2.938Z"></path>
+</svg></span>
+  <span class=" FormControl-inlineValidation--visual" data-target="primer-text-field.validationErrorIcon"><svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-alert-fill">
+    <path d="M4.855.708c.5-.896 1.79-.896 2.29 0l4.675 8.351a1.312 1.312 0 0 1-1.146 1.954H1.33A1.313 1.313 0 0 1 .183 9.058ZM7 7V3H5v4Zm-1 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
+</svg></span>
+  <span></span>
+</div>
+      <span class="FormControl-caption" id="caption-c4917528-bdb0-4057-b475-e65c4fdba689"><span hidden="hidden" data-suffix="remaining" data-view-component="true" class="js-characters-remaining">80 remaining</span></span>
+
+</primer-text-field>
+    </text-expander>
+  </div>
+</div>
+<include-fragment loading="lazy" src="/users/status/emoji?live_region_id=user-status-dialog-compact-profile-live" data-nonce="v2:1146c758-b043-c853-df9e-973d1b13ee0c" data-view-component="true"><template shadowrootmode="open"><style>:host {display: block;}</style><slot></slot></template>
+  
+  <div data-show-on-forbidden-error="" hidden="">
+    <div class="Box">
+  <div class="blankslate-container">
+    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
+      
+
+      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
+</h3>
+      <p data-view-component="true">        </p><p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="https://gist.github.com/200835ashniharashids9-blip" aria-label="Please reload this page">Please reload this page</a>.</p>
+<p></p>
+
+</div>  </div>
+</div>  </div>
+</include-fragment>
+<div class="border-bottom d-flex flex-column gap-1 pb-3">
+  <div class="js-user-status-suggestions" hidden="">
+    <action-list data-catalyst="">
+  <div data-view-component="true">
+      <div data-view-component="true" class="ActionList-sectionDivider">
+  <h2 id="heading-title-b8d0a82c-fb86-40d1-ab83-b440fba93750" data-view-component="true" class="ActionList-sectionDivider-title">
+    Suggestions
+</h2>  
+</div>
+    <ul aria-label="Suggestions" id="action-list-846579ae-a185-4b5b-a489-d7ace7c8db89" role="list" aria-labelledby="heading-title-b8d0a82c-fb86-40d1-ab83-b440fba93750" data-view-component="true" class="ActionListWrap">
+        <li data-targets="action-list.items" data-view-component="true" class="ActionListItem">
+    
+    
+    <button value=":palm_tree:" id="item-180ee13e-bab8-44c2-95e9-5e690a5b34ec" type="button" data-view-component="true" class="js-predefined-user-status ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <span aria-hidden="true" data-view-component="true" class="js-predefined-user-status-emoji"><g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/assets/1f334-453759c3779f.png">🌴</g-emoji></span>
+        </span>
+      
+        <span data-view-component="true" class="js-predefined-user-status-message ActionListItem-label">
+          On vacation
+</span>      
+</button>
+  
+</li>
+        <li data-targets="action-list.items" data-view-component="true" class="ActionListItem">
+    
+    
+    <button value=":face_with_thermometer:" id="item-990578fc-a584-4f8b-b8d4-f46806528fc8" type="button" data-view-component="true" class="js-predefined-user-status ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <span aria-hidden="true" data-view-component="true" class="js-predefined-user-status-emoji"><g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/assets/1f912-e44df2e127d9.png">🤒</g-emoji></span>
+        </span>
+      
+        <span data-view-component="true" class="js-predefined-user-status-message ActionListItem-label">
+          Out sick
+</span>      
+</button>
+  
+</li>
+        <li data-targets="action-list.items" data-view-component="true" class="ActionListItem">
+    
+    
+    <button value=":house:" id="item-c727ed2e-75a3-417f-8db8-5e750ef91c3d" type="button" data-view-component="true" class="js-predefined-user-status ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <span aria-hidden="true" data-view-component="true" class="js-predefined-user-status-emoji"><g-emoji alias="house" fallback-src="https://github.githubassets.com/assets/1f3e0-04e67e699536.png">🏠</g-emoji></span>
+        </span>
+      
+        <span data-view-component="true" class="js-predefined-user-status-message ActionListItem-label">
+          Working from home
+</span>      
+</button>
+  
+</li>
+        <li data-targets="action-list.items" data-view-component="true" class="ActionListItem">
+    
+    
+    <button value=":dart:" id="item-829dd3d9-98b4-496d-8bae-02e1738a5206" type="button" data-view-component="true" class="js-predefined-user-status ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <span aria-hidden="true" data-view-component="true" class="js-predefined-user-status-emoji"><g-emoji alias="dart" fallback-src="https://github.githubassets.com/assets/1f3af-c334ccb56185.png">🎯</g-emoji></span>
+        </span>
+      
+        <span data-view-component="true" class="js-predefined-user-status-message ActionListItem-label">
+          Focusing
+</span>      
+</button>
+  
+</li>
+</ul>    
+</div></action-list>
+  </div>
+  <div class="pt-3">
+    <div class="FormControl-checkbox-wrap">
+  <input name="limited_availability" type="hidden" value="0" autocomplete="off"><input data-default-message="I may be slow to respond." aria-describedby="caption-eb7ce298-82a1-4132-9968-a323dc43e351" class="FormControl-checkbox js-user-status-limited-availability-checkbox" type="checkbox" value="1" name="limited_availability" id="limited_availability">
+  <span class="FormControl-checkbox-labelWrap">
+    <label class="FormControl-label" for="limited_availability">
+      Busy
+</label>        <span class="FormControl-caption" id="caption-eb7ce298-82a1-4132-9968-a323dc43e351">When others mention you, assign you, or request your review, GitHub will let them know that you have limited availability.</span>
+
+  </span>
+</div>
+  </div>
+</div>
+<div class="d-flex gap-2 flex-column">
+  <div class="mt-2">
+  
+  <div class="FormControl width-full FormControl--fullWidth">
+      <label for="expires_at" class="FormControl-label">
+        Clear status
+</label>    
+  <div class="FormControl-select-wrap">
+    <select id="expires_at" test_selector="test-user-status-expiration" aria-describedby="validation-c57d7691-5969-48ce-a1a1-fae652aef76b caption-c57d7691-5969-48ce-a1a1-fae652aef76b" class="form-select FormControl-select FormControl-medium" name="expires_at"><option selected="selected" value=" ">Never</option>
+<option value="2025-11-27T14:25:29+06:00">in 30 minutes</option>
+<option value="2025-11-27T14:55:29+06:00">in 1 hour</option>
+<option value="2025-11-27T17:55:29+06:00">in 4 hours</option>
+<option value="2025-11-27T23:59:59+06:00">after today</option>
+<option value="2025-11-30T23:59:59+06:00">after this week</option>
+<option value="2025-12-27T13:55:29+06:00">after a month</option></select>
+</div>
+      <div class="FormControl-inlineValidation" id="validation-c57d7691-5969-48ce-a1a1-fae652aef76b" hidden="hidden">
+  <span class="FormControl-inlineValidation--visual" data-target="" hidden=""><svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-check-circle-fill">
+    <path d="M6 0a6 6 0 1 1 0 12A6 6 0 0 1 6 0Zm-.705 8.737L9.63 4.403 8.392 3.166 5.295 6.263l-1.7-1.702L2.356 5.8l2.938 2.938Z"></path>
+</svg></span>
+  <span class=" FormControl-inlineValidation--visual" data-target=""><svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-alert-fill">
+    <path d="M4.855.708c.5-.896 1.79-.896 2.29 0l4.675 8.351a1.312 1.312 0 0 1-1.146 1.954H1.33A1.313 1.313 0 0 1 .183 9.058ZM7 7V3H5v4Zm-1 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
+</svg></span>
+  <span></span>
+</div>
+      <span class="FormControl-caption" id="caption-c57d7691-5969-48ce-a1a1-fae652aef76b">How long until this status will automatically clear.</span>
+
+</div></div>
+
+  <include-fragment loading="lazy" src="/users/status/organizations" data-nonce="v2:1146c758-b043-c853-df9e-973d1b13ee0c" data-view-component="true"><template shadowrootmode="open"><style>:host {display: block;}</style><slot></slot></template>
+  
+  <div data-show-on-forbidden-error="" hidden="">
+    <div class="Box">
+  <div class="blankslate-container">
+    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
+      
+
+      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
+</h3>
+      <p data-view-component="true">        </p><p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="https://gist.github.com/200835ashniharashids9-blip" aria-label="Please reload this page">Please reload this page</a>.</p>
+<p></p>
+
+</div>  </div>
+</div>  </div>
+</include-fragment>
+</div>
+
+      </div>
+      <div id="user-status-dialog-compact-profile-live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+</div>
+      </scrollable-region>
+      <div data-view-component="true" class="Overlay-footer Overlay-footer--alignEnd Overlay-footer--divided d-flex flex-nowrap flex-items-center flex-justify-between p-2">      <button type="submit" data-view-component="true" class="js-user-status-submit Button--primary Button--medium Button width-full mr-0">  <span class="Button-content">
+    <span class="Button-label">Set status</span>
+  </span>
+</button>
+      <button type="button" disabled="disabled" data-view-component="true" class="js-clear-user-status-button Button--secondary Button--medium Button width-full ml-0">  <span class="Button-content">
+    <span class="Button-label">Clear status</span>
+  </span>
+</button>
+</div>
+</dialog></dialog-helper>
+</form>
+</div>
+
+  </div>
+
+
+  <div class="d-flex flex-column">
+    <div class="flex-order-1 flex-md-order-none">
+    </div>
+
+    
+<div class="js-profile-editable-area d-flex flex-column d-md-block">
+  <div class="p-note user-profile-bio mb-3 js-user-profile-bio f4" data-bio-text="" hidden=""></div>
+
+
+
+  <ul class="vcard-details">
+
+
+
+
+    
+
+
+    <li title="Member since" class="vcard-detail pt-1 mb-3 mb-md-0"><svg class="octicon octicon-rocket" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M14.064 0h.186C15.216 0 16 .784 16 1.75v.186a8.752 8.752 0 0 1-2.564 6.186l-.458.459c-.314.314-.641.616-.979.904v3.207c0 .608-.315 1.172-.833 1.49l-2.774 1.707a.749.749 0 0 1-1.11-.418l-.954-3.102a1.214 1.214 0 0 1-.145-.125L3.754 9.816a1.218 1.218 0 0 1-.124-.145L.528 8.717a.749.749 0 0 1-.418-1.11l1.71-2.774A1.748 1.748 0 0 1 3.31 4h3.204c.288-.338.59-.665.904-.979l.459-.458A8.749 8.749 0 0 1 14.064 0ZM8.938 3.623h-.002l-.458.458c-.76.76-1.437 1.598-2.02 2.5l-1.5 2.317 2.143 2.143 2.317-1.5c.902-.583 1.74-1.26 2.499-2.02l.459-.458a7.25 7.25 0 0 0 2.123-5.127V1.75a.25.25 0 0 0-.25-.25h-.186a7.249 7.249 0 0 0-5.125 2.123ZM3.56 14.56c-.732.732-2.334 1.045-3.005 1.148a.234.234 0 0 1-.201-.064.234.234 0 0 1-.064-.201c.103-.671.416-2.273 1.15-3.003a1.502 1.502 0 1 1 2.12 2.12Zm6.94-3.935c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 0 0 .119-.213ZM3.678 8.116 5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 0 0-.213.119l-1.2 1.95ZM12 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>
+        <span>Joined <relative-time datetime="2025-11-26T14:52:46Z" class="no-wrap" title="Nov 26, 2025, 8:52 PM GMT+6"><template shadowrootmode="open">17 hours ago</template>Nov 26, 2025</relative-time></span>
+</li>  </ul>
+</div>
+
+  </div>
+
+</div>
+
+  <a class="btn width-full text-center mt-3" href="https://github.com/200835ashniharashids9-blip">
+    View GitHub Profile
+  </a>
+</div>
+
+
+    <div class="col-9 col-md-9 col-12">
+      <div class="pagehead py-0 border-0 mt-md-0 mt-6 mr-md-0 mr-n3 ml-md-0 ml-n3">
+        <div class="px-3 mb-2">
+          <nav aria-label="Gist tab" data-view-component="true" class="UnderlineNav">
+
+  <ul data-view-component="true" class="UnderlineNav-body list-style-none">
+      <li data-view-component="true" class="d-inline-flex">
+  <a href="https://gist.github.com/200835ashniharashids9-blip" aria-current="page" data-view-component="true" class="UnderlineNav-item">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code-square UnderlineNav-octicon">
+    <path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25Zm7.47 3.97a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L10.69 8 9.22 6.53a.75.75 0 0 1 0-1.06ZM6.78 6.53 5.31 8l1.47 1.47a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-2-2a.75.75 0 0 1 0-1.06l2-2a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path>
+</svg>
+      <span data-view-component="true">All gists</span>
+    <span title="1" data-view-component="true" class="Counter">1</span>
+</a></li>
+</ul>
+    <div data-view-component="true" class="UnderlineNav-actions">    <div class="d-lg-flex d-none">
+        <action-menu data-select-variant="single" data-dynamic-label="" data-dynamic-label-prefix="Type" data-view-component="true" data-catalyst="" data-ready="true">
+  <focus-group direction="vertical" mnemonics="" retain="">
+    <button id="action-menu-89ee0622-d23b-49f5-bb0d-c30b13b67c95-button" popovertarget="action-menu-89ee0622-d23b-49f5-bb0d-c30b13b67c95-overlay" aria-controls="action-menu-89ee0622-d23b-49f5-bb0d-c30b13b67c95-list" aria-haspopup="true" type="button" data-view-component="true" class="Button--secondary Button--small Button">  <span class="Button-content">
+    <span class="Button-label"><span class="color-fg-muted">Type:</span><span>
+          All
+</span></span>
+  </span>
+    <span class="Button-visual Button-trailingAction">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down">
+    <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
+</svg>
+    </span>
+</button>
+
+
+<anchored-position data-target="action-menu.overlay" id="action-menu-89ee0622-d23b-49f5-bb0d-c30b13b67c95-overlay" anchor="action-menu-89ee0622-d23b-49f5-bb0d-c30b13b67c95-button" align="end" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true" style="inset: 42px auto auto 702.24px;">
+  <div data-view-component="true" class="Overlay Overlay--size-auto">
+    
+      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list data-catalyst="">
+  <div data-view-component="true">
+    <ul aria-labelledby="action-menu-89ee0622-d23b-49f5-bb0d-c30b13b67c95-button" id="action-menu-89ee0622-d23b-49f5-bb0d-c30b13b67c95-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-8ce2fe4f-fc4c-4e04-a112-726251e81b6a" href="https://gist.github.com/200835ashniharashids9-blip" role="menuitemradio" aria-checked="true" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          All
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-94f0ae4d-31e9-4d80-be3c-34e03c49ed40" href="https://gist.github.com/200835ashniharashids9-blip/public" role="menuitemradio" aria-checked="false" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Public
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-e7905d9c-5f96-44b6-933c-da3a26a8c1d9" href="https://gist.github.com/200835ashniharashids9-blip/secret" role="menuitemradio" aria-checked="false" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Secret
+</span>      
+</a>
+  
+</li>
+</ul>    
+</div></action-list>
+
+
+</div>
+      
+</div></anchored-position>  </focus-group>
+</action-menu>
+      <div class="ml-2 mr-2">
+        
+<action-menu data-select-variant="single" data-dynamic-label="" data-dynamic-label-prefix="Sort" data-view-component="true" data-catalyst="" data-ready="true">
+  <focus-group direction="vertical" mnemonics="" retain="">
+    <button id="action-menu-0ec81f55-84dc-4b48-9f15-30cf36a3864d-button" popovertarget="action-menu-0ec81f55-84dc-4b48-9f15-30cf36a3864d-overlay" aria-controls="action-menu-0ec81f55-84dc-4b48-9f15-30cf36a3864d-list" aria-haspopup="true" type="button" data-view-component="true" class="Button--secondary Button--small Button">  <span class="Button-content">
+    <span class="Button-label"><span class="color-fg-muted">Sort:</span><span>
+          Recently created
+</span></span>
+  </span>
+    <span class="Button-visual Button-trailingAction">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down">
+    <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
+</svg>
+    </span>
+</button>
+
+
+<anchored-position data-target="action-menu.overlay" id="action-menu-0ec81f55-84dc-4b48-9f15-30cf36a3864d-overlay" anchor="action-menu-0ec81f55-84dc-4b48-9f15-30cf36a3864d-button" align="end" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true" style="inset: 42px auto auto 862.5px;">
+  <div data-view-component="true" class="Overlay Overlay--size-auto">
+    
+      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list data-catalyst="">
+  <div data-view-component="true">
+    <ul aria-labelledby="action-menu-0ec81f55-84dc-4b48-9f15-30cf36a3864d-button" id="action-menu-0ec81f55-84dc-4b48-9f15-30cf36a3864d-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-7bd103cd-f9dd-4bd2-97bf-b8fb1e592055" href="https://gist.github.com/200835ashniharashids9-blip?direction=desc&amp;sort=created" role="menuitemradio" aria-checked="true" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Recently created
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-139cf3f0-297c-4505-afe8-3b2419e20bc8" href="https://gist.github.com/200835ashniharashids9-blip?direction=asc&amp;sort=created" role="menuitemradio" aria-checked="false" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Least recently created
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-18eb5684-d3ee-4d12-a732-d0ef2267f213" href="https://gist.github.com/200835ashniharashids9-blip?direction=desc&amp;sort=updated" role="menuitemradio" aria-checked="false" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Recently updated
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-e3be34b8-6dfc-4c48-ae68-2a7370b500c1" href="https://gist.github.com/200835ashniharashids9-blip?direction=asc&amp;sort=updated" role="menuitemradio" aria-checked="false" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Least recently updated
+</span>      
+</a>
+  
+</li>
+</ul>    
+</div></action-list>
+
+
+</div>
+      
+</div></anchored-position>  </focus-group>
+</action-menu>
+      </div>
+    </div>
+</div>
+</nav>
+        </div>
+        <ul class="d-flex d-lg-none px-3 mb-2 pagehead-actions float-none">
+            <li>
+              <action-menu data-select-variant="single" data-dynamic-label="" data-dynamic-label-prefix="Type" data-view-component="true" data-catalyst="" data-ready="true">
+  <focus-group direction="vertical" mnemonics="" retain="">
+    <button id="action-menu-c6c41033-6d01-44c1-ba41-790915f2b140-button" popovertarget="action-menu-c6c41033-6d01-44c1-ba41-790915f2b140-overlay" aria-controls="action-menu-c6c41033-6d01-44c1-ba41-790915f2b140-list" aria-haspopup="true" type="button" data-view-component="true" class="Button--secondary Button--small Button">  <span class="Button-content">
+    <span class="Button-label"><span class="color-fg-muted">Type:</span><span>
+          All
+</span></span>
+  </span>
+    <span class="Button-visual Button-trailingAction">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down">
+    <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
+</svg>
+    </span>
+</button>
+
+
+<anchored-position data-target="action-menu.overlay" id="action-menu-c6c41033-6d01-44c1-ba41-790915f2b140-overlay" anchor="action-menu-c6c41033-6d01-44c1-ba41-790915f2b140-button" align="end" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true" style="inset: 4px auto auto 0px;">
+  <div data-view-component="true" class="Overlay Overlay--size-auto">
+    
+      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list data-catalyst="">
+  <div data-view-component="true">
+    <ul aria-labelledby="action-menu-c6c41033-6d01-44c1-ba41-790915f2b140-button" id="action-menu-c6c41033-6d01-44c1-ba41-790915f2b140-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-52e3e85f-6866-491c-a54e-3bf558fe44d6" href="https://gist.github.com/200835ashniharashids9-blip" role="menuitemradio" aria-checked="true" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          All
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-7c02f406-48e2-4589-a9bf-61b46ff69170" href="https://gist.github.com/200835ashniharashids9-blip/public" role="menuitemradio" aria-checked="false" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Public
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-6dbbbed9-49dc-4082-8879-8a6ca4a7c0fe" href="https://gist.github.com/200835ashniharashids9-blip/secret" role="menuitemradio" aria-checked="false" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Secret
+</span>      
+</a>
+  
+</li>
+</ul>    
+</div></action-list>
+
+
+</div>
+      
+</div></anchored-position>  </focus-group>
+</action-menu>
+            </li>
+          <li>
+            
+<action-menu data-select-variant="single" data-dynamic-label="" data-dynamic-label-prefix="Sort" data-view-component="true" data-catalyst="" data-ready="true">
+  <focus-group direction="vertical" mnemonics="" retain="">
+    <button id="action-menu-1816f876-590b-42dc-bf87-3a6089edb372-button" popovertarget="action-menu-1816f876-590b-42dc-bf87-3a6089edb372-overlay" aria-controls="action-menu-1816f876-590b-42dc-bf87-3a6089edb372-list" aria-haspopup="true" type="button" data-view-component="true" class="Button--secondary Button--small Button">  <span class="Button-content">
+    <span class="Button-label"><span class="color-fg-muted">Sort:</span><span>
+          Recently created
+</span></span>
+  </span>
+    <span class="Button-visual Button-trailingAction">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down">
+    <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
+</svg>
+    </span>
+</button>
+
+
+<anchored-position data-target="action-menu.overlay" id="action-menu-1816f876-590b-42dc-bf87-3a6089edb372-overlay" anchor="action-menu-1816f876-590b-42dc-bf87-3a6089edb372-button" align="end" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true" style="inset: 4px auto auto 0px;">
+  <div data-view-component="true" class="Overlay Overlay--size-auto">
+    
+      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list data-catalyst="">
+  <div data-view-component="true">
+    <ul aria-labelledby="action-menu-1816f876-590b-42dc-bf87-3a6089edb372-button" id="action-menu-1816f876-590b-42dc-bf87-3a6089edb372-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-c8f05bdd-b988-445a-bb65-4ce9a2e7a704" href="https://gist.github.com/200835ashniharashids9-blip?direction=desc&amp;sort=created" role="menuitemradio" aria-checked="true" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Recently created
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-9ff2b037-1300-418a-a74a-0b4ce506f8d7" href="https://gist.github.com/200835ashniharashids9-blip?direction=asc&amp;sort=created" role="menuitemradio" aria-checked="false" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Least recently created
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-28172906-f82e-4d35-97cb-fdb02a47929a" href="https://gist.github.com/200835ashniharashids9-blip?direction=desc&amp;sort=updated" role="menuitemradio" aria-checked="false" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Recently updated
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-eb693a13-727f-47d0-b8c2-aab8e05d0a66" href="https://gist.github.com/200835ashniharashids9-blip?direction=asc&amp;sort=updated" role="menuitemradio" aria-checked="false" data-view-component="true" class="ActionListContent">
+        <span class="ActionListItem-visual ActionListItem-action--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check ActionListItem-singleSelectCheckmark">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Least recently updated
+</span>      
+</a>
+  
+</li>
+</ul>    
+</div></action-list>
+
+
+</div>
+      
+</div></anchored-position>  </focus-group>
+</action-menu>
+          </li>
+        </ul>
+      </div>
+
+          
+    <div class="gist-snippet">
+      <div class="gist-snippet-meta d-flex flex-lg-row flex-column width-full">
+        <ul class="col-lg-5 col-12 flex-order-2 f6 mt-lg-0 mt-3 mb-lg-0 mb-2 d-flex flex-lg-justify-end">
+          <li class="d-inline-block mr-lg-3 mr-2">
+            <a class="Link--muted" href="https://gist.github.com/200835ashniharashids9-blip/d570ba8485d9075122cd1c62031e7f12">
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code-square">
+    <path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25Zm7.47 3.97a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L10.69 8 9.22 6.53a.75.75 0 0 1 0-1.06ZM6.78 6.53 5.31 8l1.47 1.47a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-2-2a.75.75 0 0 1 0-1.06l2-2a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path>
+</svg>
+              1 file
+            </a>
+          </li>
+          <li class="d-inline-block mr-lg-3 mr-2">
+            <a class="Link--muted" href="https://gist.github.com/200835ashniharashids9-blip/d570ba8485d9075122cd1c62031e7f12/forks">
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked">
+    <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
+</svg>
+              0 forks
+            </a>
+          </li>
+            <li class="d-inline-block mr-lg-3 mr-2">
+              <a class="Link--muted" href="https://gist.github.com/200835ashniharashids9-blip/d570ba8485d9075122cd1c62031e7f12#comments">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-comment">
+    <path d="M1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0 1 13.25 12H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 13.543V12H2.75A1.75 1.75 0 0 1 1 10.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+                0 comments
+              </a>
+            </li>
+          <li class="d-inline-block">
+            <a class="Link--muted" href="https://gist.github.com/200835ashniharashids9-blip/d570ba8485d9075122cd1c62031e7f12/stargazers">
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star">
+    <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+</svg>
+              0 stars
+            </a>
+          </li>
+        </ul>
+        <div class="flex-order-1 col-lg-7 col-12 d-flex">
+          <div class="d-lg-inline-block d-none v-align-top mt-1">
+              <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/200835ashniharashids9-blip/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/200835ashniharashids9-blip" aria-keyshortcuts="Alt+ArrowUp"><img class=" avatar-user" src="./200835ashniharashids9-blip’s gists_files/246315954(2)" width="30" height="30" alt="@200835ashniharashids9-blip"></a>
+          </div>
+          <div class="d-inline-block px-lg-2 px-0">
+            <span>
+                <a data-hovercard-type="user" data-hovercard-url="/users/200835ashniharashids9-blip/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://gist.github.com/200835ashniharashids9-blip" aria-keyshortcuts="Alt+ArrowUp">200835ashniharashids9-blip</a>
+                / <a href="https://gist.github.com/200835ashniharashids9-blip/d570ba8485d9075122cd1c62031e7f12"><strong class="css-truncate-target">assignment.ipynb</strong></a>
+                <span title="Only those with the link can see this gist." data-view-component="true" class="Label">
+                  Secret
+</span>            </span>
+            <div class="color-fg-muted f6">
+              Created
+              <relative-time tense="past" datetime="2025-11-27T13:51:24+06:00" data-view-component="true" title="Nov 27, 2025, 1:51 PM GMT+6"><template shadowrootmode="open">4 minutes ago</template>November 27, 2025 13:51</relative-time>
+            </div>
+              <span class="f6 color-fg-muted">
+                Assignment.ipynb
+              </span>
+          </div>
+        </div>
+      </div>
+        <div class="js-gist-file-update-container js-task-list-container">
+  <div id="file-assignment-ipynb" class="file my-2">
+    
+    <div itemprop="text" class="Box-body p-0 blob-wrapper data type-jupyter-notebook  gist-border-0" style="overflow: auto" tabindex="0" role="region" aria-label="assignment.ipynb content, created by 200835ashniharashids9-blip on 01:51PM today.">
+
+          <div class="render-wrapper ">
+    <div class="render-container js-render-target is-render-automatic is-render-requested is-render-ready" data-identity="69b9fe97-26f6-4617-bf33-1a5d36f7975b" data-host="https://notebooks.githubusercontent.com" data-type="ipynb" style="height: 2435.36px;">
+      <span data-view-component="true">
+  <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="64" height="64" viewBox="0 0 16 16" fill="none" aria-hidden="true" data-view-component="true" class="octospinner mx-auto anim-rotate">
+    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" fill="none"></circle>
+    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>    <span class="sr-only">Loading</span>
+</span>
+      <div class="render-viewer-error">Sorry, something went wrong. <a class="Link--inTextBlock" href="https://gist.github.com/200835ashniharashids9-blip">Reload?</a></div>
+      <div class="render-viewer-fatal">Sorry, we cannot display this file.</div>
+      <div class="render-viewer-invalid">Sorry, this file is invalid so it cannot be displayed.</div>
+      <iframe class="render-viewer " src="./200835ashniharashids9-blip’s gists_files/ipynb.html" sandbox="allow-scripts allow-same-origin allow-top-navigation" title="File display" name="69b9fe97-26f6-4617-bf33-1a5d36f7975b">
+          Viewer requires iframe.
+      </iframe>
+    </div>
+  </div>
+ 
+    </div>
+
+  </div>
+</div>
+
+    </div>
+
+        <div class="paginate-container">
+          
+        </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+  </div>
+
+  </div>
+
+          <footer class="footer pt-8 pb-6 f6 color-fg-muted p-responsive" role="contentinfo">
+  <h2 class="sr-only">Footer</h2>
+
+  
+
+
+  <div class="d-flex flex-justify-center flex-items-center flex-column-reverse flex-lg-row flex-wrap flex-lg-nowrap">
+    <div class="d-flex flex-items-center flex-shrink-0 mx-2">
+      <a aria-label="GitHub Homepage" class="footer-octicon mr-2" href="https://github.com/">
+        <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
+    <path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path>
+</svg>
+</a>
+      <span>
+        © 2025 GitHub,&nbsp;Inc.
+      </span>
+    </div>
+
+    <nav aria-label="Footer">
+      <h3 class="sr-only" id="sr-footer-heading">Footer navigation</h3>
+
+      <ul class="list-style-none d-flex flex-justify-center flex-wrap mb-2 mb-lg-0" aria-labelledby="sr-footer-heading">
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}" href="https://docs.github.com/site-policy/github-terms/github-terms-of-service" data-view-component="true" class="Link--secondary Link">Terms</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}" href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" data-view-component="true" class="Link--secondary Link">Privacy</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;}" href="https://github.com/security" data-view-component="true" class="Link--secondary Link">Security</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;}" href="https://www.githubstatus.com/" data-view-component="true" class="Link--secondary Link">Status</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to community&quot;,&quot;label&quot;:&quot;text:community&quot;}" href="https://github.community/" data-view-component="true" class="Link--secondary Link">Community</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to docs&quot;,&quot;label&quot;:&quot;text:docs&quot;}" href="https://docs.github.com/" data-view-component="true" class="Link--secondary Link">Docs</a>
+          </li>
+
+          <li class="mx-2">
+            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}" href="https://support.github.com/?tags=dotcom-footer" data-view-component="true" class="Link--secondary Link">Contact</a>
+          </li>
+
+          <li class="mx-2">
+  <cookie-consent-link data-catalyst="">
+    <button type="button" class="Link--secondary underline-on-hover border-0 p-0 color-bg-transparent" data-action="click:cookie-consent-link#showConsentManagement" data-analytics-event="{&quot;location&quot;:&quot;footer&quot;,&quot;action&quot;:&quot;cookies&quot;,&quot;context&quot;:&quot;subfooter&quot;,&quot;tag&quot;:&quot;link&quot;,&quot;label&quot;:&quot;cookies_link_subfooter_footer&quot;}">
+       Manage cookies
+    </button>
+  </cookie-consent-link>
+</li>
+
+<li class="mx-2">
+  <cookie-consent-link data-catalyst="">
+    <button type="button" class="Link--secondary underline-on-hover border-0 p-0 color-bg-transparent text-left" data-action="click:cookie-consent-link#showConsentManagement" data-analytics-event="{&quot;location&quot;:&quot;footer&quot;,&quot;action&quot;:&quot;dont_share_info&quot;,&quot;context&quot;:&quot;subfooter&quot;,&quot;tag&quot;:&quot;link&quot;,&quot;label&quot;:&quot;dont_share_info_link_subfooter_footer&quot;}">
+      Do not share my personal information
+    </button>
+  </cookie-consent-link>
+</li>
+
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+
+    <ghcc-consent id="ghcc" class="position-fixed bottom-0 left-0" style="z-index: 999999" data-locale="en" data-initial-cookie-consent-allowed="" data-cookie-consent-required="false" data-catalyst=""></ghcc-consent>
+
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error" hidden="">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
+</svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
+    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+    <template id="site-details-dialog"></template>
+
+    <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none; top: 8.33333px !important; bottom: auto !important; left: 438.391px; z-index: 1000;" aria-label="User Hovercard" role="region">
+  <div class="Popover-message Popover-message--large Box color-shadow-large Popover-message--bottom-left" style="width:360px;"></div>
+</div>
+
+    <template id="snippet-clipboard-copy-button"></template>
+<template id="snippet-clipboard-copy-button-unpositioned"></template>
+
+
+    <style>
+      .user-mention[href$="/200835ashniharashids9-blip"] {
+        color: var(--color-user-mention-fg);
+        background-color: var(--bgColor-attention-muted, var(--color-attention-subtle));
+        border-radius: 2px;
+        margin-left: -2px;
+        margin-right: -2px;
+      }
+      .user-mention[href$="/200835ashniharashids9-blip"]:before,
+      .user-mention[href$="/200835ashniharashids9-blip"]:after {
+        content: '';
+        display: inline-block;
+        width: 2px;
+      }
+    </style>
+
+
+    </div>
+    <div id="js-global-screen-reader-notice" class="sr-only mt-n1" aria-live="polite" aria-atomic="true"></div>
+    <div id="js-global-screen-reader-notice-assertive" class="sr-only mt-n1" aria-live="assertive" aria-atomic="true"></div>
+  
+
+
+</body></html>
